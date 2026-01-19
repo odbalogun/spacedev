@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   ProjectGallery.init();
   ContactForm.init();
   BackToTop.init();
+  AboutCarousel.init();
 });
 
 /**
@@ -711,6 +712,90 @@ const BackToTop = {
         behavior: 'smooth'
       });
     });
+  }
+};
+
+/**
+ * About Carousel Module
+ */
+const AboutCarousel = {
+  carousel: null,
+  slides: [],
+  dots: [],
+  currentIndex: 0,
+  autoPlayInterval: null,
+  
+  init() {
+    this.carousel = document.getElementById('aboutCarousel');
+    if (!this.carousel) return;
+    
+    this.slides = Array.from(this.carousel.querySelectorAll('.carousel-slide'));
+    this.dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    
+    if (this.slides.length === 0) return;
+    
+    // Navigation buttons
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => this.prevSlide());
+    }
+    
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => this.nextSlide());
+    }
+    
+    // Dot navigation
+    this.dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => this.goToSlide(index));
+    });
+    
+    // Auto-play
+    this.startAutoPlay();
+    
+    // Pause on hover
+    this.carousel.addEventListener('mouseenter', () => this.stopAutoPlay());
+    this.carousel.addEventListener('mouseleave', () => this.startAutoPlay());
+  },
+  
+  goToSlide(index) {
+    if (index < 0 || index >= this.slides.length) return;
+    
+    // Remove active class from current slide and dot
+    this.slides[this.currentIndex].classList.remove('active');
+    this.dots[this.currentIndex]?.classList.remove('active');
+    
+    // Set new current index
+    this.currentIndex = index;
+    
+    // Add active class to new slide and dot
+    this.slides[this.currentIndex].classList.add('active');
+    this.dots[this.currentIndex]?.classList.add('active');
+  },
+  
+  nextSlide() {
+    const nextIndex = (this.currentIndex + 1) % this.slides.length;
+    this.goToSlide(nextIndex);
+  },
+  
+  prevSlide() {
+    const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+    this.goToSlide(prevIndex);
+  },
+  
+  startAutoPlay() {
+    this.stopAutoPlay();
+    this.autoPlayInterval = setInterval(() => {
+      this.nextSlide();
+    }, 5000); // Change slide every 5 seconds
+  },
+  
+  stopAutoPlay() {
+    if (this.autoPlayInterval) {
+      clearInterval(this.autoPlayInterval);
+      this.autoPlayInterval = null;
+    }
   }
 };
 

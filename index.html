@@ -83,16 +83,16 @@
             <a href="contact.html" class="btn btn-outline-white btn-lg">Get In Touch</a>
           </div>
           
-          <div class="hero-stats">
+          <!-- <div class="hero-stats">
             <div class="hero-stat">
               <div class="hero-stat-number">
-                <span data-counter="15" data-suffix="+">0</span>
+                <span data-counter="20" data-suffix="+">0</span>
               </div>
               <div class="hero-stat-label">Years Experience</div>
             </div>
             <div class="hero-stat">
               <div class="hero-stat-number">
-                <span data-counter="200" data-suffix="+">0</span>
+                <span data-counter="60" data-suffix="+">0</span>
               </div>
               <div class="hero-stat-label">Projects Completed</div>
             </div>
@@ -108,7 +108,7 @@
               </div>
               <div class="hero-stat-label">Client Satisfaction</div>
             </div>
-          </div>
+          </div> -->
         </div>
         
         <!-- Building Construction Animation -->
@@ -174,8 +174,50 @@
   <section class="section about-section">
     <div class="container">
       <div class="about-grid">
-        <div class="about-img-wrapper reveal-left">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600" alt="SPACEDEV Construction Site" class="about-img">
+        <div class="about-carousel-wrapper reveal-left">
+          <div class="about-carousel" id="aboutCarousel">
+            <!-- Carousel Slides -->
+            <div class="carousel-slide active">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="The Onyx Tower" class="carousel-img">
+              <div class="carousel-title">The Onyx Tower</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Green Valley Estate" class="carousel-img">
+              <div class="carousel-title">Green Valley Estate</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800" alt="Metro Highway Bridge" class="carousel-img">
+              <div class="carousel-title">Metro Highway Bridge</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Industrial Complex" class="carousel-img">
+              <div class="carousel-title">Industrial Complex Alpha</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Sunrise Mall" class="carousel-img">
+              <div class="carousel-title">Sunrise Mall</div>
+            </div>
+          </div>
+          
+          <!-- Carousel Navigation -->
+          <button class="carousel-btn carousel-prev" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn carousel-next" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Slide 1"></button>
+            <button class="carousel-dot" aria-label="Slide 2"></button>
+            <button class="carousel-dot" aria-label="Slide 3"></button>
+            <button class="carousel-dot" aria-label="Slide 4"></button>
+            <button class="carousel-dot" aria-label="Slide 5"></button>
+          </div>
+          
           <div class="about-img-accent"></div>
         </div>
         
