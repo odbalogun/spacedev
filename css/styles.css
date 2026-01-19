@@ -1555,13 +1555,19 @@ p {
   color: var(--white);
 }
 
+.contact-info h2,
 .contact-info h3 {
   color: var(--white);
   margin-bottom: var(--space-md);
 }
 
+.contact-info .lead {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-lg);
+}
+
 .contact-info p {
-  color: var(--light-gray);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: var(--space-lg);
 }
 
@@ -1589,15 +1595,28 @@ p {
   font-size: 1.25rem;
 }
 
+.contact-item-text h4,
 .contact-item-text h5 {
   color: var(--white);
   margin-bottom: 0.25rem;
+  font-weight: 600;
 }
 
 .contact-item-text p {
-  color: var(--light-gray);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
   margin: 0;
+}
+
+.contact-item-text a {
+  color: var(--primary);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.contact-item-text a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
 }
 
 .contact-social {
