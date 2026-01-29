@@ -1,0 +1,50 @@
+{
+  "name": "SPACEDEV",
+  "tagline": "Space Development Consulting Limited",
+  "description": "Premier construction and development consulting firm delivering excellence in residential, commercial, and infrastructure projects.",
+  "copyrightYear": "2026",
+  "logo": "assets/logo_clean_1.png",
+  "favicon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23C4D602' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='%231A1A1A'%3ESD%3C/text%3E%3C/svg%3E",
+  "nav": [
+    { "href": "#", "label": "Services" },
+    { "href": "#", "label": "Projects" },
+    { "href": "#", "label": "About Us" },
+    { "href": "#", "label": "Contact Us" }
+  ],
+  "footer": {
+    "explore": [
+      { "href": "#", "label": "Services" },
+      { "href": "#", "label": "Projects" },
+      { "href": "#", "label": "About Us" },
+      { "href": "#", "label": "Contact Us" }
+    ],
+    "company": [
+      { "href": "#", "label": "About Us" },
+      { "href": "#", "label": "Our Team" },
+      { "href": "#", "label": "Contact Us" }
+    ],
+    "tagline": "Setting the gold standard in high-end construction and modern architecture.",
+    "address": {
+      "lines": ["18 Rafiu Shittu Street,", "Alaka Estate,", "Surulere,", "Lagos."]
+    }
+  },
+  "social": [
+    { "name": "Instagram", "href": "#", "ariaLabel": "Instagram" },
+    { "name": "LinkedIn", "href": "#", "ariaLabel": "LinkedIn" },
+    { "name": "Facebook", "href": "#", "ariaLabel": "Facebook" },
+    { "name": "Twitter", "href": "#", "ariaLabel": "Twitter" }
+  ],
+  "clients": [
+    { "src": "assets/clients/access_logo_transparent.png", "alt": "Access Bank" },
+    { "src": "assets/clients/alml_logo.png", "alt": "ALML" },
+    { "src": "assets/clients/apm_terminals_transparent.png", "alt": "APM Terminals" },
+    { "src": "assets/clients/Ecobank_Logo.png", "alt": "Ecobank" },
+    { "src": "assets/clients/GTBank_logo.svg", "alt": "GTBank" },
+    { "src": "assets/clients/ikoyi_club_logo.png", "alt": "Ikoyi Club" },
+    { "src": "assets/clients/mrs_logo_transparent.png", "alt": "MRS" },
+    { "src": "assets/clients/oceanic_transparent_bg.png", "alt": "Oceanic" },
+    { "src": "assets/clients/Sterling_Bank_Logo_Straight.png", "alt": "Sterling Bank" },
+    { "src": "assets/clients/virgin_atlantic.png", "alt": "Virgin Atlantic" },
+    { "src": "assets/clients/wema-bank-seeklogo.png", "alt": "Wema Bank" }
+  ]
+}

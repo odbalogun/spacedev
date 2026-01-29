@@ -1,0 +1,16 @@
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 text-primary">
+<img src="{{ site.logo }}" alt="{{ site.name }}" class="h-8 w-auto"/>
+<h1 class="text-xl font-black tracking-tighter text-white">{{ site.name }}</h1>
+</a>
+<nav class="hidden md:flex items-center gap-10">
+{% for item in site.nav %}
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="{{ item.href }}">{{ item.label }}</a>
+{% endfor %}
+</nav>
+<button class="bg-primary hover:bg-opacity-90 text-background-dark px-5 py-2.5 rounded font-bold text-sm tracking-wide transition-all uppercase">
+                Request Quote
+            </button>
+</div>
+</header>

@@ -1,0 +1,184 @@
+---
+layout: layouts/base.njk
+title: SPACEDEV
+---
+
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-background-dark z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Futuristic skyscraper made of glass and steel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD866eRGNfhLUWfGHT7bGarKLYfCZjypMHghJtHkoNo6PJZbLHpLEjpqURBHmeG--k-YDKGgHyOUfsvEtR7OtByCnRf9exlN0X-vpe6dQ9FFXJLE6PBjsS0poncJ0yQP5vuTEvdvjjxph8rrCKSuswyUAlL5WZmZrNb1f_CecY_l5AhXPf6qGQM1bND8Ryb5v7X_kkGU5RvcpvY4SsWe-MZE7LMtA_yGuFQEDWVTRpYRfupMRYyfHZOv3rinBizvOsTgZhL0I5dSls');"></div>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 block text-sm">Engineering the Future</span>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight mb-8">
+                    Building the <span class="text-primary">Future</span> of Nigeria's Infrastructure
+</h1>
+<p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+    Space Development Consulting Limited delivers world-class construction and development solutions. From landmark commercial buildings to sustainable residential communities, we transform visions into reality.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-background-dark px-8 py-4 rounded font-bold text-base hover:scale-105 transition-transform">
+                        Explore Our Projects
+                    </button>
+<button class="w-full sm:w-auto border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded font-bold text-base transition-all">
+                        Our Process
+                    </button>
+</div>
+</div>
+</section>
+<!-- Trusted By Section -->
+<section class="pt-12 bg-background-dark border-y border-white/5 border-b-0 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-accent-sub font-bold text-xs tracking-widest uppercase mb-10">Trusted By Leading Brands</p>
+<div class="clients-scroll-wrapper">
+<div class="clients-scroll">
+{% for client in site.clients %}
+<img src="{{ client.src }}" alt="{{ client.alt }}" title="{{ client.alt }}" class="client-logo"/>
+{% endfor %}
+<!-- Duplicate set for seamless loop -->
+{% for client in site.clients %}
+<img src="{{ client.src }}" alt="{{ client.alt }}" title="{{ client.alt }}" class="client-logo"/>
+{% endfor %}
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Experience</h3>
+<p class="text-5xl font-black text-white mb-2">23+</p>
+<p class="text-gray-400 font-medium">Years of structural excellence across the nation.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Completed</h3>
+<p class="text-5xl font-black text-primary mb-2">115+</p>
+<p class="text-gray-400 font-medium">Iconic landmarks delivered on time and beyond scope.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Awards</h3>
+<p class="text-5xl font-black text-white mb-2">16</p>
+<p class="text-gray-400 font-medium">National awards won for sustainability and design.</p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+    <div class="max-w-2xl">
+    <h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-6">Our Expertise</h2>
+    <h3 class="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter">Mastering Complexity <br/>in Construction</h3>
+    </div>
+    <p class="text-gray-400 max-w-sm font-medium leading-relaxed">From intricate tech hubs to expansive residential retreats, we build environments that inspire and endure.</p>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-12">
+    <div class="w-full lg:w-1/3 space-y-4">
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group" data-active="true">
+    <div class="text-primary mb-4">
+    <span class="material-symbols-outlined text-4xl">domain</span>
+    </div>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Commercial</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Adaptive workspaces and tech-forward headquarters designed for the digital workforce of tomorrow.</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+    </div>
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group border-l-4 border-white/5 hover:border-primary/50" data-active="false">
+    <div class="text-primary mb-4">
+    <span class="material-symbols-outlined text-4xl">home_iot_device</span>
+    </div>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Residential</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Ultra-luxury smart homes and sustainable living communities that redefine modern comfort.</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+    </div>
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group border-l-4 border-white/5 hover:border-primary/50" data-active="false">
+    <div class="text-primary mb-4">
+    <span class="material-symbols-outlined text-4xl">factory</span>
+    </div>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Industrial</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">High-performance industrial facilities and logistics hubs optimized for peak operational efficiency.</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+    </div>
+    </div>
+    <div class="w-full lg:w-2/3 h-[400px] lg:h-auto min-h-[500px] rounded-2xl overflow-hidden relative">
+    <img alt="Commercial Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="true" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80"/>
+    <img alt="Residential Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="false" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ"/>
+    <img alt="Industrial Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="false" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD866eRGNfhLUWfGHT7bGarKLYfCZjypMHghJtHkoNo6PJZbLHpLEjpqURBHmeG--k-YDKGgHyOUfsvEtR7OtByCnRf9exlN0X-vpe6dQ9FFXJLE6PBjsS0poncJ0yQP5vuTEvdvjjxph8rrCKSuswyUAlL5WZmZrNb1f_CecY_l5AhXPf6qGQM1bND8Ryb5v7X_kkGU5RvcpvY4SsWe-MZE7LMtA_yGuFQEDWVTRpYRfupMRYyfHZOv3rinBizvOsTgZhL0I5dSls"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+    </div>
+    </div>
+    </div>
+    </section>
+<!-- Featured Projects Gallery -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center mb-16">
+<h2 class="text-4xl font-black text-white">Featured Projects</h2>
+<button class="text-primary font-bold hover:underline flex items-center gap-2">
+                    View Portfolio <span class="material-symbols-outlined">east</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group overflow-hidden rounded-xl aspect-[16/10]">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 p-8 flex flex-col justify-end">
+<h5 class="text-2xl font-bold text-white">The Zenith Hub</h5>
+<p class="text-primary font-bold">Berlin, DE</p>
+</div>
+<img alt="Zenith Hub Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern geometric concrete building with glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80"/>
+</div>
+<div class="relative group overflow-hidden rounded-xl aspect-[16/10]">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 p-8 flex flex-col justify-end">
+<h5 class="text-2xl font-bold text-white">Nova Residences</h5>
+<p class="text-primary font-bold">Singapore</p>
+</div>
+<img alt="Nova Residences" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="High-end luxury apartment building with greenery on balconies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ"/>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-background-dark border-y border-white/5 process-section" id="process-section" data-active-step="0">
+    <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+    <h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.35em] mb-4">Our Methodology</h2>
+    <h3 class="text-4xl font-black text-white tracking-tighter">The SPACEDEV Process</h3>
+    </div>
+    <div class="relative px-12">
+    <div class="absolute top-1/2 left-0 w-full h-[1px] timeline-track -translate-y-1/2 hidden md:block"></div>
+    <div class="absolute top-1/2 left-0 h-[1px] timeline-fill -translate-y-1/2 hidden md:block transition-[width] duration-500 ease-out"></div>
+    <div class="flex flex-col md:flex-row justify-between relative z-10 gap-12 md:gap-4">
+    <div class="process-step flex-1 flex flex-col items-center md:items-start group cursor-pointer" data-step="1">
+    <div class="process-step-number w-12 h-12 border-2 border-primary text-primary bg-background-dark rounded-full flex items-center justify-center mb-6 text-lg font-black ring-8 ring-background-dark">01</div>
+    <h4 class="text-lg font-extrabold text-white mb-2 tracking-tight">Discovery</h4>
+    <p class="text-gray-400 text-xs font-medium leading-relaxed md:pr-4 text-center md:text-left">Feasibility studies and architectural vision alignment.</p>
+    </div>
+    <div class="process-step flex-1 flex flex-col items-center md:items-start group cursor-pointer" data-step="2">
+    <div class="process-step-number w-12 h-12 border-2 border-primary text-primary bg-background-dark rounded-full flex items-center justify-center mb-6 text-lg font-black ring-8 ring-background-dark">02</div>
+    <h4 class="text-lg font-extrabold text-white mb-2 tracking-tight">Engineering</h4>
+    <p class="text-gray-400 text-xs font-medium leading-relaxed md:pr-4 text-center md:text-left">Advanced structural planning and resource optimization.</p>
+    </div>
+    <div class="process-step flex-1 flex flex-col items-center md:items-start group cursor-pointer" data-step="3">
+    <div class="process-step-number w-12 h-12 border-2 border-primary text-primary bg-background-dark rounded-full flex items-center justify-center mb-6 text-lg font-black ring-8 ring-background-dark">03</div>
+    <h4 class="text-lg font-extrabold text-white mb-2 tracking-tight">Execution</h4>
+    <p class="text-gray-400 text-xs font-medium leading-relaxed text-center md:text-left">Precision construction managed by elite field experts.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+<!-- CTA Section -->
+<section class="py-24 px-6">
+<div class="cta-box max-w-5xl mx-auto bg-primary rounded-2xl p-12 md:p-20 text-center flex flex-col items-center relative overflow-hidden">
+<h2 class="text-background-dark text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to build the extraordinary?</h2>
+<p class="text-background-dark/80 text-lg md:text-xl max-w-xl mb-12">Let's discuss your next project. Our experts are ready to bring your vision to life.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-background-dark text-white px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:scale-105 transition-transform">Get a Quote</button>
+<button class="bg-transparent border-2 border-background-dark text-background-dark px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:bg-background-dark hover:text-white transition-all">Contact Us</button>
+</div>
+</div>
+</section>

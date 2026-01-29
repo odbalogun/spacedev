@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+{% include "partials/head.njk" %}
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden">
+{% include "partials/header.njk" %}
+<main class="pt-0">
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+<script>
+    // Tab Interaction Logic for Services
+    const tabs = document.querySelectorAll('.service-tab');
+    const images = document.querySelectorAll('.service-image');
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('mouseenter', () => {
+            tabs.forEach(t => {
+                t.setAttribute('data-active', 'false');
+                t.classList.remove('border-primary');
+                t.classList.add('border-white/5');
+            });
+            tab.setAttribute('data-active', 'true');
+            tab.classList.add('border-primary');
+            tab.classList.remove('border-white/5');
+            images.forEach(img => img.setAttribute('data-active', 'false'));
+            images[index].setAttribute('data-active', 'true');
+        });
+    });
+
+    // Process section: animate timeline on step hover
+    const processSection = document.getElementById('process-section');
+    if (processSection) {
+        const steps = processSection.querySelectorAll('.process-step');
+        steps.forEach((step) => {
+            step.addEventListener('mouseenter', () => {
+                processSection.setAttribute('data-active-step', step.getAttribute('data-step'));
+            });
+        });
+        processSection.addEventListener('mouseleave', () => {
+            processSection.setAttribute('data-active-step', '0');
+        });
+    }
+</script>
+</body>
+</html>

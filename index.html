@@ -1,871 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Space Development Consulting Limited (SPACEDEV) - Premier construction and development consulting firm delivering excellence in residential, commercial, and infrastructure projects.">
-  <meta name="keywords" content="construction, development, consulting, building, infrastructure, Nigeria, Lagos">
-  <title>SPACEDEV | Space Development Consulting Limited</title>
-  
-  <!-- Preconnect to external resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23C4D602' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='%231A1A1A'%3ESD%3C/text%3E%3C/svg%3E">
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Space Development Consulting Limited (SPACEDEV) - Premier construction and development consulting firm delivering excellence in residential, commercial, and infrastructure projects.">
+<meta name="keywords" content="construction, development, consulting, building, infrastructure, Nigeria, Lagos, SpaceDev, Space Development Consulting Limited, Tosin Sunmonu">
+<title>SPACEDEV | Space Development Consulting Limited</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c3d402",
+                        "accent-sub": "#7E9C38",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link rel="stylesheet" href="css/styles.css">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23C4D602' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='%231A1A1A'%3ESD%3C/text%3E%3C/svg%3E">
 </head>
-<body>
-  <!-- Loader -->
-  <div class="loader">
-    <div class="loader-inner">
-      <div class="loader-dot"></div>
-      <div class="loader-dot"></div>
-      <div class="loader-dot"></div>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden">
+<!-- Sticky Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 text-primary">
+<img src="assets/logo_clean_1.png" alt="SPACEDEV" class="h-8 w-auto"/>
+<h1 class="text-xl font-black tracking-tighter text-white">SPACEDEV</h1>
+</a>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact Us</a>
+</nav>
+<button class="bg-primary hover:bg-opacity-90 text-background-dark px-5 py-2.5 rounded font-bold text-sm tracking-wide transition-all uppercase">
+                Request Quote
+            </button>
+</div>
+</header>
+<main class="pt-0">
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-background-dark z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Futuristic skyscraper made of glass and steel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD866eRGNfhLUWfGHT7bGarKLYfCZjypMHghJtHkoNo6PJZbLHpLEjpqURBHmeG--k-YDKGgHyOUfsvEtR7OtByCnRf9exlN0X-vpe6dQ9FFXJLE6PBjsS0poncJ0yQP5vuTEvdvjjxph8rrCKSuswyUAlL5WZmZrNb1f_CecY_l5AhXPf6qGQM1bND8Ryb5v7X_kkGU5RvcpvY4SsWe-MZE7LMtA_yGuFQEDWVTRpYRfupMRYyfHZOv3rinBizvOsTgZhL0I5dSls');"></div>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 block text-sm">Engineering the Future</span>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight mb-8">
+                    Building the <span class="text-primary">Future</span> of Nigeria's Infrastructure
+</h1>
+<p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+    Space Development Consulting Limited delivers world-class construction and development solutions. From landmark commercial buildings to sustainable residential communities, we transform visions into reality.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-background-dark px-8 py-4 rounded font-bold text-base hover:scale-105 transition-transform">
+                        Explore Our Projects
+                    </button>
+<button class="w-full sm:w-auto border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded font-bold text-base transition-all">
+                        Our Process
+                    </button>
+</div>
+</div>
+</section>
+<!-- Trusted By Section -->
+<section class="pt-12 bg-background-dark border-y border-white/5 border-b-0 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-accent-sub font-bold text-xs tracking-widest uppercase mb-10">Trusted By Leading Brands</p>
+<div class="clients-scroll-wrapper">
+<div class="clients-scroll">
+<img src="assets/clients/access_logo_transparent.png" alt="Access Bank" title="Access Bank" class="client-logo"/>
+<img src="assets/clients/alml_logo.png" alt="ALML" title="ALML" class="client-logo"/>
+<img src="assets/clients/apm_terminals_transparent.png" alt="APM Terminals" title="APM Terminals" class="client-logo"/>
+<img src="assets/clients/Ecobank_Logo.png" alt="Ecobank" title="Ecobank" class="client-logo"/>
+<img src="assets/clients/GTBank_logo.svg" alt="GTBank" title="GTBank" class="client-logo"/>
+<img src="assets/clients/ikoyi_club_logo.png" alt="Ikoyi Club" title="Ikoyi Club" class="client-logo"/>
+<img src="assets/clients/mrs_logo_transparent.png" alt="MRS" title="MRS" class="client-logo"/>
+<img src="assets/clients/oceanic_transparent_bg.png" alt="Oceanic" title="Oceanic" class="client-logo"/>
+<img src="assets/clients/Sterling_Bank_Logo_Straight.png" alt="Sterling Bank" title="Sterling Bank" class="client-logo"/>
+<img src="assets/clients/virgin_atlantic.png" alt="Virgin Atlantic" title="Virgin Atlantic" class="client-logo"/>
+<img src="assets/clients/wema-bank-seeklogo.png" alt="Wema Bank" title="Wema Bank" class="client-logo"/>
+<!-- Duplicate set for seamless loop -->
+<img src="assets/clients/access_logo_transparent.png" alt="Access Bank" title="Access Bank" class="client-logo"/>
+<img src="assets/clients/alml_logo.png" alt="ALML" title="ALML" class="client-logo"/>
+<img src="assets/clients/apm_terminals_transparent.png" alt="APM Terminals" title="APM Terminals" class="client-logo"/>
+<img src="assets/clients/Ecobank_Logo.png" alt="Ecobank" title="Ecobank" class="client-logo"/>
+<img src="assets/clients/GTBank_logo.svg" alt="GTBank" title="GTBank" class="client-logo"/>
+<img src="assets/clients/ikoyi_club_logo.png" alt="Ikoyi Club" title="Ikoyi Club" class="client-logo"/>
+<img src="assets/clients/mrs_logo_transparent.png" alt="MRS" title="MRS" class="client-logo"/>
+<img src="assets/clients/oceanic_transparent_bg.png" alt="Oceanic" title="Oceanic" class="client-logo"/>
+<img src="assets/clients/Sterling_Bank_Logo_Straight.png" alt="Sterling Bank" title="Sterling Bank" class="client-logo"/>
+<img src="assets/clients/virgin_atlantic.png" alt="Virgin Atlantic" title="Virgin Atlantic" class="client-logo"/>
+<img src="assets/clients/wema-bank-seeklogo.png" alt="Wema Bank" title="Wema Bank" class="client-logo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Experience</h3>
+<p class="text-5xl font-black text-white mb-2">23+</p>
+<p class="text-gray-400 font-medium">Years of structural excellence across the nation.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Completed</h3>
+<p class="text-5xl font-black text-primary mb-2">115+</p>
+<p class="text-gray-400 font-medium">Iconic landmarks delivered on time and beyond scope.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Awards</h3>
+<p class="text-5xl font-black text-white mb-2">16</p>
+<p class="text-gray-400 font-medium">National awards won for sustainability and design.</p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<!-- <section class="py-24 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">Our Expertise</h2>
+<h3 class="text-4xl md:text-5xl font-black text-white leading-tight">Mastering Complexity in Construction</h3>
+</div>
+<p class="text-gray-400 max-w-sm">From intricate tech hubs to expansive residential retreats, we build environments that inspire and endure.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="service-card bg-background-dark border border-white/10 p-8 rounded-xl flex flex-col h-full group">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">domain</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Commercial</h4>
+<p class="text-gray-400 leading-relaxed mb-8">Adaptive workspaces and tech-forward headquarters designed for the digital workforce of tomorrow.</p>
+<a class="mt-auto flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-4 transition-all" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="service-card bg-background-dark border border-white/10 p-8 rounded-xl flex flex-col h-full group">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">home_iot_device</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Residential</h4>
+<p class="text-gray-400 leading-relaxed mb-8">Ultra-luxury smart homes and sustainable living communities that redefine modern comfort.</p>
+<a class="mt-auto flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-4 transition-all" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="service-card bg-background-dark border border-white/10 p-8 rounded-xl flex flex-col h-full group">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">factory</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Industrial</h4>
+<p class="text-gray-400 leading-relaxed mb-8">High-performance industrial facilities and logistics hubs optimized for peak operational efficiency.</p>
+<a class="mt-auto flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-4 transition-all" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section> -->
+<section class="py-32 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+    <div class="max-w-2xl">
+    <h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-6">Our Expertise</h2>
+    <h3 class="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter">Mastering Complexity <br/>in Construction</h3>
     </div>
-  </div>
-
-  <!-- Scroll Progress -->
-  <div class="scroll-progress"></div>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">SD</div>
-        <div class="logo-text">
-          <span class="company-name">SPACEDEV</span>
-          <span class="company-tagline">Building Tomorrow</span>
-        </div>
-      </a>
-      
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">Who We Are</a></li>
-        <li><a href="services.html" class="nav-link">What We Do</a></li>
-        <li><a href="projects.html" class="nav-link">Our Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-      </ul>
-      
-      <div class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <p class="text-gray-400 max-w-sm font-medium leading-relaxed">From intricate tech hubs to expansive residential retreats, we build environments that inspire and endure.</p>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg">
-      <video class="hero-video" autoplay muted loop playsinline>
-        <source src="assets/hero-video.mp4" type="video/mp4">
-        <source src="assets/hero-video.webm" type="video/webm">
-        <!-- Fallback if video doesn't load -->
-      </video>
-      <div class="hero-bg-pattern"></div>
+    <div class="flex flex-col lg:flex-row gap-12">
+    <div class="w-full lg:w-1/3 space-y-4">
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group" data-active="true">
+    <div class="text-primary mb-4">
+    <span class="material-symbols-outlined text-4xl">domain</span>
     </div>
-    
-    <div class="container">
-      <div class="hero-wrapper">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="hero-badge-dot"></span>
-            <span class="hero-badge-text">Excellence in Construction</span>
-          </div>
-          
-          <h1>Building the <span>Future</span> of Nigeria's Infrastructure</h1>
-          
-          <p>Space Development Consulting Limited delivers world-class construction and development solutions. From landmark commercial buildings to sustainable residential communities, we transform visions into reality.</p>
-          
-          <div class="hero-buttons">
-            <a href="projects.html" class="btn btn-primary btn-lg">View Our Projects</a>
-            <a href="contact.html" class="btn btn-outline-white btn-lg">Get In Touch</a>
-          </div>
-          
-          <!-- <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="hero-stat-number">
-                <span data-counter="20" data-suffix="+">0</span>
-              </div>
-              <div class="hero-stat-label">Years Experience</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-number">
-                <span data-counter="60" data-suffix="+">0</span>
-              </div>
-              <div class="hero-stat-label">Projects Completed</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-number">
-                <span data-counter="50" data-suffix="+">0</span>
-              </div>
-              <div class="hero-stat-label">Expert Team</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-number">
-                <span data-counter="98" data-suffix="%">0</span>
-              </div>
-              <div class="hero-stat-label">Client Satisfaction</div>
-            </div>
-          </div> -->
-        </div>
-        
-        <!-- Building Construction Animation -->
-        <div class="hero-building-animation" id="buildingAnimation">
-          <div class="building-container">
-            <!-- Foundation -->
-            <div class="building-floor building-foundation"></div>
-            
-            <!-- Floors -->
-            <div class="building-floor building-floor-1">
-              <div class="building-windows">
-                <div class="window window-1"></div>
-                <div class="window window-2"></div>
-                <div class="window window-3"></div>
-              </div>
-            </div>
-            
-            <div class="building-floor building-floor-2">
-              <div class="building-windows">
-                <div class="window window-1"></div>
-                <div class="window window-2"></div>
-                <div class="window window-3"></div>
-              </div>
-            </div>
-            
-            <div class="building-floor building-floor-3">
-              <div class="building-windows">
-                <div class="window window-1"></div>
-                <div class="window window-2"></div>
-                <div class="window window-3"></div>
-              </div>
-            </div>
-            
-            <div class="building-floor building-floor-4">
-              <div class="building-windows">
-                <div class="window window-1"></div>
-                <div class="window window-2"></div>
-                <div class="window window-3"></div>
-              </div>
-            </div>
-            
-            <div class="building-floor building-floor-5">
-              <div class="building-windows">
-                <div class="window window-1"></div>
-                <div class="window window-2"></div>
-                <div class="window window-3"></div>
-              </div>
-            </div>
-            
-            <!-- Construction particles/effects -->
-            <div class="construction-particles">
-              <div class="particle particle-1"></div>
-              <div class="particle particle-2"></div>
-              <div class="particle particle-3"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Commercial</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Adaptive workspaces and tech-forward headquarters designed for the digital workforce of tomorrow.</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
     </div>
-  </section>
-
-  <!-- About Preview Section -->
-  <section class="section about-section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-carousel-wrapper reveal-left">
-          <div class="about-carousel" id="aboutCarousel">
-            <!-- Carousel Slides -->
-            <div class="carousel-slide active">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="The Onyx Tower" class="carousel-img">
-              <div class="carousel-title">The Onyx Tower</div>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Green Valley Estate" class="carousel-img">
-              <div class="carousel-title">Green Valley Estate</div>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800" alt="Metro Highway Bridge" class="carousel-img">
-              <div class="carousel-title">Metro Highway Bridge</div>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Industrial Complex" class="carousel-img">
-              <div class="carousel-title">Industrial Complex Alpha</div>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Sunrise Mall" class="carousel-img">
-              <div class="carousel-title">Sunrise Mall</div>
-            </div>
-          </div>
-          
-          <!-- Carousel Navigation -->
-          <button class="carousel-btn carousel-prev" aria-label="Previous slide">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button class="carousel-btn carousel-next" aria-label="Next slide">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-          <div class="carousel-dots">
-            <button class="carousel-dot active" aria-label="Slide 1"></button>
-            <button class="carousel-dot" aria-label="Slide 2"></button>
-            <button class="carousel-dot" aria-label="Slide 3"></button>
-            <button class="carousel-dot" aria-label="Slide 4"></button>
-            <button class="carousel-dot" aria-label="Slide 5"></button>
-          </div>
-          
-          <div class="about-img-accent"></div>
-        </div>
-        
-        <div class="about-content reveal-right">
-          <span class="section-label">About Us</span>
-          <h2 class="section-title">Building Excellence Since 2003</h2>
-          <p class="lead">Space Development Consulting Limited (SPACEDEV) is a leading construction and development consulting firm committed to delivering exceptional projects across Nigeria and West Africa.</p>
-          <p>With over 15 years of industry experience, we have established ourselves as trusted partners for government agencies, private corporations, and international organizations seeking world-class construction solutions.</p>
-          
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="about-feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </div>
-              <div class="about-feature-text">
-                <h5>Quality Assured</h5>
-                <p>ISO 9001:2015 certified processes</p>
-              </div>
-            </div>
-            
-            <div class="about-feature">
-              <div class="about-feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="8" x2="12" y2="12"></line>
-                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                </svg>
-              </div>
-              <div class="about-feature-text">
-                <h5>Safety First</h5>
-                <p>Zero tolerance safety policy</p>
-              </div>
-            </div>
-             
-            <div class="about-feature">
-              <div class="about-feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                  <path d="M2 17l10 5 10-5"></path>
-                  <path d="M2 12l10 5 10-5"></path>
-                </svg>
-              </div>
-              <div class="about-feature-text">
-                <h5>Innovative Solutions</h5>
-                <p>Cutting-edge construction methods</p>
-              </div>
-            </div>
-            
-            <div class="about-feature">
-              <div class="about-feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <div class="about-feature-text">
-                <h5>Expert Team</h5>
-                <p>Skilled professionals</p>
-              </div>
-            </div>
-          </div>
-          
-          <a href="about.html" class="btn btn-primary" style="margin-top: 2rem;">Learn More About Us</a>
-        </div>
-      </div>
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group border-l-4 border-white/5 hover:border-primary/50" data-active="false">
+    <div class="text-primary mb-4">
+    <span class="material-symbols-outlined text-4xl">home_iot_device</span>
     </div>
-  </section>
-
-  <!-- Partners Section -->
-  <section class="partners-section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Clients</span>
-        <h2 class="section-title">Trusted By Leading Brands</h2>
-      </div>
-      
-      <div class="partners-scroll-wrapper reveal">
-        <div class="partners-scroll">
-          <!-- First set of logos -->
-          <div class="partner-logo">
-            <img src="assets/clients/alml_logo.png" alt="ALML" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/apm_terminals_transparent.png" alt="APM Terminals" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/access_logo_transparent.png" alt="Access Bank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/Ecobank_Logo.png" alt="Ecobank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/GTBank_logo.svg" alt="GTBank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/ikoyi_club_logo.png" alt="Ikoyi Club" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/mrs_logo_transparent.png" alt="MRS" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/oceanic_transparent_bg.png" alt="Oceanic Bank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/Sterling_Bank_Logo_Straight.png" alt="Sterling Bank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/virgin_atlantic.png" alt="Virgin Atlantic" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/wema-bank-seeklogo.png" alt="Wema Bank" />
-          </div>
-          
-          <!-- Duplicate set for seamless loop -->
-          <div class="partner-logo">
-            <img src="assets/clients/alml_logo.png" alt="ALML" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/apm_terminals_transparent.png" alt="APM Terminals" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/access_logo_transparent.png" alt="Access Bank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/Ecobank_Logo.png" alt="Ecobank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/GTBank_logo.svg" alt="GTBank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/ikoyi_club_logo.png" alt="Ikoyi Club" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/mrs_logo_transparent.png" alt="MRS" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/oceanic_transparent_bg.png" alt="Oceanic Bank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/Sterling_Bank_Logo_Straight.png" alt="Sterling Bank" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/virgin_atlantic.png" alt="Virgin Atlantic" />
-          </div>
-          <div class="partner-logo">
-            <img src="assets/clients/wema-bank-seeklogo.png" alt="Wema Bank" />
-          </div>
-        </div>
-      </div>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Residential</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Ultra-luxury smart homes and sustainable living communities that redefine modern comfort.</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
     </div>
-  </section>
-
-   <!-- Featured Projects Section -->
-   <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Portfolio</span>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Discover some of our landmark developments across Nigeria</p>
-      </div>
-      
-      <div class="grid grid-3">
-        <div class="project-card reveal" data-tilt>
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="The Onyx Tower" class="project-img">
-          <div class="project-overlay">
-            <span class="project-category">Commercial</span>
-            <h3 class="project-title">The Onyx Tower</h3>
-            <p class="project-location">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              Victoria Island, Lagos
-            </p>
-          </div>
-        </div>
-        
-        <div class="project-card reveal delay-1" data-tilt>
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Green Valley Estate" class="project-img">
-          <div class="project-overlay">
-            <span class="project-category">Residential</span>
-            <h3 class="project-title">Green Valley Estate</h3>
-            <p class="project-location">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              Lekki, Lagos
-            </p>
-          </div>
-        </div>
-        
-        <div class="project-card reveal delay-2" data-tilt>
-          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600" alt="Metro Highway Bridge" class="project-img">
-          <div class="project-overlay">
-            <span class="project-category">Infrastructure</span>
-            <h3 class="project-title">Metro Highway Bridge</h3>
-            <p class="project-location">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              Abuja, Nigeria
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="text-center" style="margin-top: 3rem;">
-        <a href="projects.html" class="btn btn-primary btn-lg">View All Projects</a>
-      </div>
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group border-l-4 border-white/5 hover:border-primary/50" data-active="false">
+    <div class="text-primary mb-4">
+    <span class="material-symbols-outlined text-4xl">factory</span>
     </div>
-  </section>
-
-  <!-- Services Preview Section -->
-  <section class="section bg-pattern" style="background-color: var(--off-white);">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Services</span>
-        <h2 class="section-title">What We Do</h2>
-        <p class="section-subtitle">Comprehensive construction and development solutions tailored to your needs</p>
-      </div>
-      
-      <div class="grid grid-3" data-stagger data-stagger-delay="100">
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-              <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-          </div>
-          <h3 class="service-title">Residential Construction</h3>
-          <p class="service-text">From luxury apartments to gated communities, we create living spaces that combine comfort, style, and sustainability.</p>
-          <a href="services.html" class="btn btn-outline btn-sm">Learn More</a>
-        </div>
-        
-        <div class="service-card reveal delay-1">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-              <path d="M9 22v-4h6v4"></path>
-              <line x1="8" y1="6" x2="16" y2="6"></line>
-              <line x1="8" y1="10" x2="16" y2="10"></line>
-              <line x1="8" y1="14" x2="12" y2="14"></line>
-            </svg>
-          </div>
-          <h3 class="service-title">Commercial Development</h3>
-          <p class="service-text">Office towers, retail complexes, and mixed-use developments designed for maximum functionality and aesthetic appeal.</p>
-          <a href="services.html" class="btn btn-outline btn-sm">Learn More</a>
-        </div>
-        
-        <div class="service-card reveal delay-2">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">Infrastructure Projects</h3>
-          <p class="service-text">Roads, bridges, and utilities that form the backbone of modern development and economic growth.</p>
-          <a href="services.html" class="btn btn-outline btn-sm">Learn More</a>
-        </div>
-        
-        <div class="service-card reveal delay-3">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
-          </div>
-          <h3 class="service-title">Project Management</h3>
-          <p class="service-text">End-to-end project oversight ensuring timely delivery, cost control, and quality assurance at every stage.</p>
-          <a href="services.html" class="btn btn-outline btn-sm">Learn More</a>
-        </div>
-        
-        <div class="service-card reveal delay-4">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>
-          </div>
-          <h3 class="service-title">Consulting Services</h3>
-          <p class="service-text">Expert guidance on feasibility studies, regulatory compliance, and construction best practices.</p>
-          <a href="services.html" class="btn btn-outline btn-sm">Learn More</a>
-        </div>
-        
-        <div class="service-card reveal delay-5">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <circle cx="12" cy="12" r="3"></circle>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-            </svg>
-          </div>
-          <h3 class="service-title">Renovation & Retrofitting</h3>
-          <p class="service-text">Transforming existing structures with modern upgrades while preserving architectural integrity.</p>
-          <a href="services.html" class="btn btn-outline btn-sm">Learn More</a>
-        </div>
-      </div>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Industrial</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">High-performance industrial facilities and logistics hubs optimized for peak operational efficiency.</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
     </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats-section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <div class="stat-number" data-counter="200" data-suffix="+">0</div>
-          <div class="stat-label">Projects Completed</div>
-        </div>
-        <div class="stat-item reveal delay-1">
-          <div class="stat-number" data-counter="15" data-suffix="+">0</div>
-          <div class="stat-label">Years Experience</div>
-        </div>
-        <div class="stat-item reveal delay-2">
-          <div class="stat-number" data-counter="150" data-suffix="+">0</div>
-          <div class="stat-label">Happy Clients</div>
-        </div>
-        <div class="stat-item reveal delay-3">
-          <div class="stat-number" data-counter="25" data-suffix="M+">0</div>
-          <div class="stat-label">Square Meters Built</div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content reveal">
-        <h2>Ready to Build Your Vision?</h2>
-        <p>Let's discuss your next project. Our team of experts is ready to transform your ideas into reality.</p>
-        <a href="contact.html" class="btn btn-dark btn-lg">Start Your Project</a>
-      </div>
+    <div class="w-full lg:w-2/3 h-[400px] lg:h-auto min-h-[500px] rounded-2xl overflow-hidden relative">
+    <img alt="Commercial Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="true" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80"/>
+    <img alt="Residential Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="false" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ"/>
+    <img alt="Industrial Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="false" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD866eRGNfhLUWfGHT7bGarKLYfCZjypMHghJtHkoNo6PJZbLHpLEjpqURBHmeG--k-YDKGgHyOUfsvEtR7OtByCnRf9exlN0X-vpe6dQ9FFXJLE6PBjsS0poncJ0yQP5vuTEvdvjjxph8rrCKSuswyUAlL5WZmZrNb1f_CecY_l5AhXPf6qGQM1bND8Ryb5v7X_kkGU5RvcpvY4SsWe-MZE7LMtA_yGuFQEDWVTRpYRfupMRYyfHZOv3rinBizvOsTgZhL0I5dSls"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">SD</div>
-            <div class="logo-text">
-              <span class="company-name">SPACEDEV</span>
-              <span class="company-tagline">Building Tomorrow</span>
-            </div>
-          </a>
-          <p>Space Development Consulting Limited is a premier construction and development firm delivering excellence across Nigeria and West Africa since 2009.</p>
-          <div class="contact-social">
-            <a href="#" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
-            <a href="#" aria-label="Twitter">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-              </svg>
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <div class="footer-links-wrapper">
-          <h4 class="footer-title">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Who We Are</a></li>
-            <li><a href="services.html">What We Do</a></li>
-            <li><a href="projects.html">Our Projects</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-links-wrapper">
-          <h4 class="footer-title">Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html">Residential Construction</a></li>
-            <li><a href="services.html">Commercial Development</a></li>
-            <li><a href="services.html">Infrastructure Projects</a></li>
-            <li><a href="services.html">Project Management</a></li>
-            <li><a href="services.html">Consulting Services</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-links-wrapper">
-          <h4 class="footer-title">Contact Info</h4>
-          <ul class="footer-links">
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              18 Rafiu Shittu Street, <br/><span style="margin-left: 2rem;">Alaka Estate,</span> <br/><span style="margin-left: 2rem;">Surulere,</span> <br/><span style="margin-left: 2rem;"></span>Lagos.</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              +234 802 303 4908
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              +234 803 617 3169
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              info@spacedevconsulting.com
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2024 Space Development Consulting Limited. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
-      </div>
     </div>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" aria-label="Back to top">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </button>
-
-  <!-- Scripts -->
-  <!-- Anime.js Library - Official CDN from jsDelivr -->
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script>
-  console.log('Anime.js available:', typeof anime !== 'undefined');
-  console.log('Building animation script loaded, readyState:', document.readyState);
-  </script>
-  <script src="js/main.js"></script>
-  <script>
-    // Building Construction Animation using Anime.js
-    // Following official docs: https://animejs.com/documentation/getting-started
-    (function() {
-      'use strict';
-      
-      console.log('Building animation script loaded, readyState:', document.readyState);
-      console.log('Anime.js available:', typeof anime !== 'undefined');
-      
-      function initBuildingAnimation() {
-        console.log('initBuildingAnimation called');
-        
-        // Check if anime.js is loaded (required per docs)
-        if (typeof anime === 'undefined') {
-          console.error('Anime.js is NOT loaded! Check CDN URL.');
-          console.warn('Retrying in 100ms...');
-          setTimeout(initBuildingAnimation, 100);
-          return;
-        }
-
-        console.log('Anime.js loaded successfully, version:', anime.version || 'unknown');
-
-        // Get target element (per docs: use getElementById or querySelector)
-        const buildingAnimation = document.getElementById('buildingAnimation');
-        if (!buildingAnimation) {
-          console.error('Building animation element not found - ID: buildingAnimation');
-          // Debug: check what building-related elements exist
-          const allBuildings = document.querySelectorAll('[id*="building"], [class*="building"]');
-          console.log('Found building-related elements:', allBuildings.length);
-          return;
-        }
-        
-        console.log('Building animation container found:', buildingAnimation);
-        
-        // Make the container visible and ensure it's displayed
-        buildingAnimation.style.opacity = '1';
-        buildingAnimation.style.visibility = 'visible';
-        buildingAnimation.style.display = 'flex';
-
-        // Wait for page load animation to complete before starting building animation
-        setTimeout(() => {
-        console.log('Starting building animation (after initial delay)');
-        
-        // Scope selectors to building container to avoid conflicts
-        const container = buildingAnimation.querySelector('.building-container');
-        if (!container) {
-          console.error('Building container not found');
-          return;
-        }
-        
-        const foundation = container.querySelector('.building-foundation');
-        const allFloors = container.querySelectorAll('.building-floor');
-        const floors = [
-          container.querySelector('.building-floor.building-floor-1'),
-          container.querySelector('.building-floor.building-floor-2'),
-          container.querySelector('.building-floor.building-floor-3'),
-          container.querySelector('.building-floor.building-floor-4'),
-          container.querySelector('.building-floor.building-floor-5')
-        ];
-        const windows = container.querySelectorAll('.window');
-        const particles = container.querySelectorAll('.particle');
-        
-        // Verify elements exist
-        console.log('Elements found:', {
-          foundation: !!foundation,
-          allFloors: allFloors.length,
-          floors: floors.filter(f => f).length,
-          windows: windows.length,
-          particles: particles.length
+    </div>
+    </section>
+<!-- Featured Projects Gallery -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center mb-16">
+<h2 class="text-4xl font-black text-white">Featured Projects</h2>
+<button class="text-primary font-bold hover:underline flex items-center gap-2">
+                    View Portfolio <span class="material-symbols-outlined">east</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group overflow-hidden rounded-xl aspect-[16/10]">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 p-8 flex flex-col justify-end">
+<h5 class="text-2xl font-bold text-white">The Zenith Hub</h5>
+<p class="text-primary font-bold">Berlin, DE</p>
+</div>
+<img alt="Zenith Hub Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern geometric concrete building with glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80"/>
+</div>
+<div class="relative group overflow-hidden rounded-xl aspect-[16/10]">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 p-8 flex flex-col justify-end">
+<h5 class="text-2xl font-bold text-white">Nova Residences</h5>
+<p class="text-primary font-bold">Singapore</p>
+</div>
+<img alt="Nova Residences" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="High-end luxury apartment building with greenery on balconies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ"/>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-background-dark border-y border-white/5 process-section" id="process-section" data-active-step="0">
+    <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+    <h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.35em] mb-4">Our Methodology</h2>
+    <h3 class="text-4xl font-black text-white tracking-tighter">The SPACEDEV Process</h3>
+    </div>
+    <div class="relative px-12">
+    <div class="absolute top-1/2 left-0 w-full h-[1px] timeline-track -translate-y-1/2 hidden md:block"></div>
+    <div class="absolute top-1/2 left-0 h-[1px] timeline-fill -translate-y-1/2 hidden md:block transition-[width] duration-500 ease-out"></div>
+    <div class="flex flex-col md:flex-row justify-between relative z-10 gap-12 md:gap-4">
+    <div class="process-step flex-1 flex flex-col items-center md:items-start group cursor-pointer" data-step="1">
+    <div class="process-step-number w-12 h-12 border-2 border-primary text-primary bg-background-dark rounded-full flex items-center justify-center mb-6 text-lg font-black ring-8 ring-background-dark">01</div>
+    <h4 class="text-lg font-extrabold text-white mb-2 tracking-tight">Discovery</h4>
+    <p class="text-gray-400 text-xs font-medium leading-relaxed md:pr-4 text-center md:text-left">Feasibility studies and architectural vision alignment.</p>
+    </div>
+    <div class="process-step flex-1 flex flex-col items-center md:items-start group cursor-pointer" data-step="2">
+    <div class="process-step-number w-12 h-12 border-2 border-primary text-primary bg-background-dark rounded-full flex items-center justify-center mb-6 text-lg font-black ring-8 ring-background-dark">02</div>
+    <h4 class="text-lg font-extrabold text-white mb-2 tracking-tight">Engineering</h4>
+    <p class="text-gray-400 text-xs font-medium leading-relaxed md:pr-4 text-center md:text-left">Advanced structural planning and resource optimization.</p>
+    </div>
+    <div class="process-step flex-1 flex flex-col items-center md:items-start group cursor-pointer" data-step="3">
+    <div class="process-step-number w-12 h-12 border-2 border-primary text-primary bg-background-dark rounded-full flex items-center justify-center mb-6 text-lg font-black ring-8 ring-background-dark">03</div>
+    <h4 class="text-lg font-extrabold text-white mb-2 tracking-tight">Execution</h4>
+    <p class="text-gray-400 text-xs font-medium leading-relaxed text-center md:text-left">Precision construction managed by elite field experts.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+<!-- CTA Section -->
+<section class="py-24 px-6">
+<div class="cta-box max-w-5xl mx-auto bg-primary rounded-2xl p-12 md:p-20 text-center flex flex-col items-center relative overflow-hidden">
+<h2 class="text-background-dark text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to build the extraordinary?</h2>
+<p class="text-background-dark/80 text-lg md:text-xl max-w-xl mb-12">Let's discuss your next project. Our experts are ready to bring your vision to life.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-background-dark text-white px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:scale-105 transition-transform">Get a Quote</button>
+<button class="bg-transparent border-2 border-background-dark text-background-dark px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:bg-background-dark hover:text-white transition-all">Contact Us</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-white/10 py-20">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-primary mb-6">
+<img src="assets/logo_clean_1.png" alt="SPACEDEV" class="h-8 w-auto"/>
+<h2 class="text-xl font-black tracking-tighter text-white">SPACEDEV</h2>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+                    Setting the gold standard in high-end construction and modern architecture.
+                </p>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Explore</h5>
+<ul class="space-y-4 text-gray-500 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Projects</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Company</h5>
+<ul class="space-y-4 text-gray-500 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Headquarters</h5>
+<p class="text-gray-500 text-sm mb-4">
+    18 Rafiu Shittu Street,<br/>
+    Alaka Estate,<br/>
+    Surulere,<br/>
+    Lagos.<br/>
+                </p>
+<div class="flex gap-4">
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 pt-16 mt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-xs">
+<p>© 2026 SPACEDEV Construction Group. All rights reserved.</p>
+<div class="flex gap-8">
+<!-- <a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a> -->
+</div>
+</div>
+</footer>
+<script>
+    // Tab Interaction Logic for Services
+    const tabs = document.querySelectorAll('.service-tab');
+    const images = document.querySelectorAll('.service-image');
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('mouseenter', () => {
+            // Update tabs
+            tabs.forEach(t => {
+                t.setAttribute('data-active', 'false');
+                t.classList.remove('border-primary');
+                t.classList.add('border-white/5');
+            });
+            tab.setAttribute('data-active', 'true');
+            tab.classList.add('border-primary');
+            tab.classList.remove('border-white/5');
+            // Update images
+            images.forEach(img => img.setAttribute('data-active', 'false'));
+            images[index].setAttribute('data-active', 'true');
         });
-        
-        // If no elements found, show error and make container visible anyway
-        if (!foundation && allFloors.length === 0) {
-          console.error('No building elements found!');
-          container.style.border = '2px solid red'; // Visual debug
-          container.style.minHeight = '200px';
-          container.innerHTML = '<div style="color: white; padding: 20px;">Building animation container - Elements not found</div>';
-          return;
-        }
+    });
 
-        // Create timeline (per Anime.js docs: https://animejs.com/documentation/timeline)
-        const tl = anime.timeline({
-          easing: 'easeInOutQuad',
-          duration: 1000
+    // Process section: animate timeline on step hover
+    const processSection = document.getElementById('process-section');
+    if (processSection) {
+        const steps = processSection.querySelectorAll('.process-step');
+        steps.forEach((step) => {
+            step.addEventListener('mouseenter', () => {
+                processSection.setAttribute('data-active-step', step.getAttribute('data-step'));
+            });
         });
-
-        // --- Layer-by-layer build sequence (bottom -> top) ---
-        // Foundation then floors 1..5, with windows appearing shortly after each floor.
-        let t = 0;
-
-        const revealLayer = (el, atMs, duration = 650) => {
-          if (!el) return;
-          tl.add({
-            targets: el,
-            scaleY: [0, 1],
-            opacity: [0, 1],
-            transformOrigin: 'bottom',
-            duration,
-            easing: 'easeOutQuad'
-          }, atMs);
-        };
-
-        // Floors: animate bottom-most first (floor 5 -> 1)
-        const floorsBottomUp = floors.slice().reverse();
-        floorsBottomUp.forEach((floor) => {
-          if (!floor) return;
-
-          revealLayer(floor, t, 650);
-
-          const floorWindows = floor.querySelectorAll('.window');
-          if (floorWindows.length > 0) {
-            tl.add({
-              targets: Array.from(floorWindows),
-              opacity: [0, 1],
-              scale: [0.85, 1],
-              delay: anime.stagger(90),
-              duration: 350,
-              easing: 'easeOutBack'
-            }, t + 320);
-          }
-
-          t += 720;
+        processSection.addEventListener('mouseleave', () => {
+            processSection.setAttribute('data-active-step', '0');
         });
-
-        // Foundation (kept in normal DOM position; animated last so the bottom row appears first)
-        revealLayer(foundation, t, 750);
-
-        // Construction particles animation
-        if (particles.length > 0) {
-          console.log('Animating particles');
-          anime({
-            targets: Array.from(particles),
-            translateY: () => anime.random(-100, -200),
-            translateX: () => anime.random(-50, 50),
-            opacity: [0, 1, 0],
-            scale: [0.5, 1, 0],
-            duration: () => anime.random(1000, 2000),
-            delay: () => anime.random(0, 1000),
-            easing: 'easeOutQuad',
-            loop: true
-          });
-        }
-
-        // Pulsing lights on completed building
-        if (windows.length > 0) {
-          console.log('Animating window lights');
-          anime({
-            targets: Array.from(windows),
-            opacity: [0.3, 1],
-            duration: () => anime.random(1000, 2000),
-            delay: () => anime.random(0, 3000),
-            easing: 'easeInOutQuad',
-            loop: true,
-            direction: 'alternate'
-          });
-        }
-        
-        console.log('Building animation timeline created and started');
-      }, 1500);
-      }
-      
-      // Initialize per Anime.js docs: ensure DOM is ready
-      // Per docs: https://animejs.com/documentation/getting-started/using-with-vanilla-js
-      if (document.readyState === 'loading') {
-        console.log('DOM still loading, waiting for DOMContentLoaded');
-        document.addEventListener('DOMContentLoaded', function() {
-          console.log('DOMContentLoaded fired, initializing building animation');
-          initBuildingAnimation();
-        });
-      } else {
-        // DOM already ready
-        console.log('DOM already ready, initializing building animation immediately');
-        // Use setTimeout to ensure scripts are fully loaded
-        setTimeout(initBuildingAnimation, 0);
-      }
-    })();
-  </script>
-</body>
-</html>
-
+    }
+</script>
+</body></html>
