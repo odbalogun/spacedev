@@ -10,7 +10,7 @@
     { "href": "#", "label": "Services" },
     { "href": "#", "label": "Projects" },
     { "href": "about.html", "label": "About Us" },
-    { "href": "#", "label": "Contact Us" }
+    { "href": "contact.html", "label": "Contact Us" }
   ],
   "footer": {
     "explore": [
@@ -18,16 +18,23 @@
       { "href": "#", "label": "Services" },
       { "href": "#", "label": "Projects" },
       { "href": "about.html", "label": "About Us" },
-      { "href": "#", "label": "Contact Us" }
+      { "href": "contact.html", "label": "Contact Us" }
     ],
     "company": [
-      { "href": "#", "label": "About Us" },
+      { "href": "about.html", "label": "About Us" },
       { "href": "#", "label": "Our Team" },
-      { "href": "#", "label": "Contact Us" }
+      { "href": "contact.html", "label": "Contact Us" }
     ],
     "tagline": "Setting the gold standard in high-end construction and modern architecture.",
     "address": {
       "lines": ["18 Rafiu Shittu Street,", "Alaka Estate,", "Surulere,", "Lagos."]
+    },
+    "contact": {
+      "phone": "+234 802 303 4908",
+      "phoneSecondary": "+234 803 617 3169",
+      "phoneHours": "Mon–Fri, 9am – 6pm WAT",
+      "email": "info@spacedevconsulting.com",
+      "emailSecondary": "projects@spacedevconsulting.com"
     }
   },
   "social": [

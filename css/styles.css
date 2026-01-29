@@ -2,6 +2,12 @@ body {
     font-family: 'Public Sans', sans-serif;
 }
 
+/* Contact form focus ring */
+.glow-focus:focus {
+    box-shadow: 0 0 10px 2px rgba(195, 212, 2, 0.3);
+    border-color: #c3d402 !important;
+}
+
 /* Site logo image (used on about, contact, projects, services) */
 .logo-img {
     height: 50px;
