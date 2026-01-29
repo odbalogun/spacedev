@@ -6,16 +6,18 @@
   "logo": "assets/logo_clean_1.png",
   "favicon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23C4D602' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='%231A1A1A'%3ESD%3C/text%3E%3C/svg%3E",
   "nav": [
+    { "href": "index.html", "label": "Home" },
     { "href": "#", "label": "Services" },
     { "href": "#", "label": "Projects" },
-    { "href": "#", "label": "About Us" },
+    { "href": "about.html", "label": "About Us" },
     { "href": "#", "label": "Contact Us" }
   ],
   "footer": {
     "explore": [
+      { "href": "index.html", "label": "Home" },
       { "href": "#", "label": "Services" },
       { "href": "#", "label": "Projects" },
-      { "href": "#", "label": "About Us" },
+      { "href": "about.html", "label": "About Us" },
       { "href": "#", "label": "Contact Us" }
     ],
     "company": [
@@ -33,6 +35,14 @@
     { "name": "LinkedIn", "href": "#", "ariaLabel": "LinkedIn" },
     { "name": "Facebook", "href": "#", "ariaLabel": "Facebook" },
     { "name": "Twitter", "href": "#", "ariaLabel": "Twitter" }
+  ],
+  "team": [
+    { "name": "Marcus Thorne", "role": "CEO & Founder", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAcqiEMAlXAjtk_8qsXGIBh14CgXRel9YQ0SlzDeOchqL3qfej4qf711gFJJsH2aQ0R2U0NnAk4OmONDBzRpBJINi-9IH73GXAWtCY-sUHKMohuXkoRsooRoH1cffA9EV2I0_Ty9jdzfoYe2B4a7ds54A3ScsM3Jw7YnVRawgnmsTtJJV76EN8_c41OEF43dy8VWIuHWd1pTKzVR9FZHyQpvAOjePHuPZDxJwZLZY4-2e4LuPMJnGusSTCbQrnSHC4Z09RywJb7qaY", "shortBio": "20+ years in structural engineering. Visionary behind our sustainable development framework.", "fullProfile": "Marcus founded SPACEDEV in 2010 with a mission to bring sustainable, modular architecture to the forefront of construction. With over two decades in structural engineering across Europe and Africa, he has led the design of multiple LEED-certified towers and pioneered our net-zero construction framework. Marcus holds a PhD in Structural Engineering from Imperial College London and serves on several industry boards focused on sustainable building standards." },
+    { "name": "Elena Rodriguez", "role": "Chief Technology Officer", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0yukgyz4uXhD7e6TtNlwQfykYJILCsWcnu0iREuxaXH3kYm-B1SeSBgOKVp3RdOr9rjU3MaVOmkeyc3Nx3qA7h7maOZhhfntmHLM6Zw0lUHWjEtjhs6Ac7_d_gB4ZcogXysJqTSoB-n7YeLlf4dseQLaA1pqndRrILA-QTQCyXe5lZx0wfF_-hwUFKRDOE4zlSNHeCs_yfPhnFHGzfUe0B1S0EQq3zmhSk-rzQcqM9dmR4Q5vWwSJYmqi0OPm7hIlh75IatXkHu0", "shortBio": "Pioneer in 3D-printing tech for construction. Leading our digital twin initiatives.", "fullProfile": "Elena joined SPACEDEV in 2016 to lead our technology and innovation division. She has been instrumental in integrating 3D-printing and robotic fabrication into our construction pipeline, and currently drives our digital twin and BIM initiatives across all major projects. Previously, she led R&D at a global construction tech firm and holds patents in additive manufacturing for building materials. Elena holds an MSc in Computational Design from MIT." },
+    { "name": "David Chen", "role": "Head of Design", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9GwRjCSqTT8R7oX3zUl1ZqgOABdzx9EokAATd54KUrpnS3i5y5ql-Vv87eSI9VXPC6FGcvmOcG4LUMb3tymbvDLt35fmCglcLa08T10zpdn_xiU8CjpR0Yzkb2fQ8hFVKJo-gGl8vAcUrEdjPcgKR_fvhCd_MTr2w46mNCn7E71_Ls1p0tr-th4BAOffdp5cC2gMFdVJg9TnuNPJ1jlX-3PEePJmwtQ7UiIECABOSA7GbyNROH8BsTZZsPHEkYgXH1BKVVddJQI0", "shortBio": "Award-winning architect focused on bio-mimetic design and urban regeneration.", "fullProfile": "David leads SPACEDEV's design studio and has been responsible for some of our most acclaimed projects, including the Innovation District headquarters. His work in bio-mimetic design and urban regeneration has earned multiple international awards. Before joining in 2014, he ran his own practice in Singapore and taught at the National University. David is a RIBA Chartered Architect and holds a Master's in Urban Design from Harvard GSD." },
+    { "name": "Amara Okonkwo", "role": "Director of Operations", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4xKkEMAlXAjtk_8qsXGIBh14CgXRel9YQ0SlzDeOchqL3qfej4qf711gFJJsH2aQ0R2U0NnAk4OmONDBzRpBJINi-9IH73GXAWtCY-sUHKMohuXkoRsooRoH1cffA9EV2I0_Ty9jdzfoYe2B4a7ds54A3ScsM3Jw7YnVRawgnmsTtJJV76EN8_c41OEF43dy8VWIuHWd1pTKzVR9FZHyQpvAOjePHuPZDxJwZLZY4-2e4LuPMJnGusSTCbQrnSHC4Z09RywJb7qaY", "shortBio": "Ensures seamless delivery across all projects. Expert in supply chain and site management.", "fullProfile": "Amara oversees project delivery and operations across SPACEDEV's portfolio. With 15 years in construction management and supply chain optimization, she has streamlined our procurement and site execution processes, reducing delivery times while maintaining the highest quality standards. She previously held senior roles at two major Nigerian developers and holds an MBA from Lagos Business School and a BEng in Civil Engineering." },
+    { "name": "Sarah Mitchell", "role": "Head of Sustainability", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0yukgyz4uXhD7e6TtNlwQfykYJILCsWcnu0iREuxaXH3kYm-B1SeSBgOKVp3RdOr9rjU3MaVOmkeyc3Nx3qA7h7maOZhhfntmHLM6Zw0lUHWjEtjhs6Ac7_d_gB4ZcogXysJqTSoB-n7YeLlf4dseQLaA1pqndRrILA-QTQCyXe5lZx0wfF_-hwUFKRDOE4zlSNHeCs_yfPhnFHGzfUe0B1S0EQq3zmhSk-rzQcqM9dmR4Q5vWwSJYmqi0OPm7hIlh75IatXkHu0", "shortBio": "Champions green building and circular economy practices across every project.", "fullProfile": "Sarah drives SPACEDEV's sustainability strategy and ensures our projects meet the strictest environmental and social governance criteria. She has led certification efforts for multiple LEED Platinum and BREEAM Outstanding buildings. Before joining in 2017, she worked with international NGOs on sustainable housing in emerging markets. Sarah holds an MSc in Environmental Engineering and is a LEED Fellow and BREEAM Assessor." },
+    { "name": "James Adeyemi", "role": "Chief Financial Officer", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAcqiEMAlXAjtk_8qsXGIBh14CgXRel9YQ0SlzDeOchqL3qfej4qf711gFJJsH2aQ0R2U0NnAk4OmONDBzRpBJINi-9IH73GXAWtCY-sUHKMohuXkoRsooRoH1cffA9EV2I0_Ty9jdzfoYe2B4a7ds54A3ScsM3Jw7YnVRawgnmsTtJJV76EN8_c41OEF43dy8VWIuHWd1pTKzVR9FZHyQpvAOjePHuPZDxJwZLZY4-2e4LuPMJnGusSTCbQrnSHC4Z09RywJb7qaY", "shortBio": "Leads finance and strategy. Former investment banker with deep infrastructure experience.", "fullProfile": "James joined SPACEDEV as CFO in 2019, bringing two decades of experience in infrastructure finance and M&A. He has structured funding for some of our largest projects and leads our investor relations and strategic planning. Previously, he was a director at a leading investment bank covering construction and real estate across Africa. James is a Chartered Accountant and holds an MBA from INSEAD." }
   ],
   "clients": [
     { "src": "assets/clients/access_logo_transparent.png", "alt": "Access Bank" },

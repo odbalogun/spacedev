@@ -6,7 +6,7 @@
 </a>
 <nav class="hidden md:flex items-center gap-10">
 {% for item in site.nav %}
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="{{ item.href }}">{{ item.label }}</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors{% if (page.url == '/about.html' or page.url == '/about/') and item.label == 'About Us' %} text-primary font-extrabold{% endif %}{% if (page.url == '/' or page.url == '/index.html') and item.label == 'Home' %} text-primary font-extrabold{% endif %}" href="{{ item.href }}">{{ item.label }}</a>
 {% endfor %}
 </nav>
 <button class="bg-primary hover:bg-opacity-90 text-background-dark px-5 py-2.5 rounded font-bold text-sm tracking-wide transition-all uppercase">

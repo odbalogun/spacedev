@@ -225,3 +225,43 @@ body {
     pointer-events: none;
     border-radius: inherit;
 }
+
+/* About page: journey timeline & leadership */
+.timeline-line.about-timeline {
+    background: linear-gradient(to bottom, transparent, #c3d402 15%, #c3d402 85%, transparent);
+    opacity: 0.3;
+}
+.bio-reveal {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.team-card:hover .bio-reveal {
+    opacity: 1;
+}
+.team-card:hover img {
+    filter: brightness(0.3);
+}
+
+/* Team modal (about page) */
+.team-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.team-modal:not(.hidden) {
+    display: flex;
+}
+.team-modal.hidden {
+    display: none;
+}
+.team-modal-box {
+    position: relative;
+    max-height: calc(90vh - 4rem);
+}
+.team-modal-panel.hidden {
+    display: none !important;
+}
+.team-modal-panel:not(.hidden) {
+    display: flex !important;
+}
