@@ -18,12 +18,8 @@ title: SPACEDEV
     Space Development Consulting Limited delivers world-class construction and development solutions. From landmark commercial buildings to sustainable residential communities, we transform visions into reality.
                 </p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<button class="w-full sm:w-auto bg-primary text-background-dark px-8 py-4 rounded font-bold text-base hover:scale-105 transition-transform">
-                        Explore Our Projects
-                    </button>
-<button class="w-full sm:w-auto border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded font-bold text-base transition-all">
-                        Our Process
-                    </button>
+<a class="w-full sm:w-auto bg-primary text-background-dark px-8 py-4 rounded font-bold text-base hover:scale-105 transition-transform text-center no-underline" href="#projects">Explore Our Projects</a>
+<a class="w-full sm:w-auto border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded font-bold text-base transition-all text-center no-underline" href="#process-section">Our Process</a>
 </div>
 </div>
 </section>
@@ -82,7 +78,7 @@ title: SPACEDEV
     </div>
     <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Commercial</h4>
     <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Adaptive workspaces and tech-forward headquarters designed for the digital workforce of tomorrow.</p>
-    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html">
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#commercial">
                                 Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
     </a>
     </div>
@@ -92,7 +88,7 @@ title: SPACEDEV
     </div>
     <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Residential</h4>
     <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Ultra-luxury smart homes and sustainable living communities that redefine modern comfort.</p>
-    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html">
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#residential">
                                 Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
     </a>
     </div>
@@ -102,7 +98,7 @@ title: SPACEDEV
     </div>
     <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Industrial</h4>
     <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">High-performance industrial facilities and logistics hubs optimized for peak operational efficiency.</p>
-    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html">
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#industrial">
                                 Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
     </a>
     </div>
@@ -117,22 +113,20 @@ title: SPACEDEV
     </div>
     </section>
 <!-- Featured Projects Gallery -->
-<section class="py-24 max-w-7xl mx-auto px-6">
+<section id="projects" class="py-24 max-w-7xl mx-auto px-6 scroll-mt-24">
 <div class="flex flex-col md:flex-row justify-between items-center mb-16">
 <h2 class="text-4xl font-black text-white">Featured Projects</h2>
-<button class="text-primary font-bold hover:underline flex items-center gap-2">
-                    View Portfolio <span class="material-symbols-outlined">east</span>
-</button>
+<a class="text-primary font-bold hover:underline flex items-center gap-2" href="projects.html">View Projects <span class="material-symbols-outlined">east</span></a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="relative group overflow-hidden rounded-xl aspect-[16/10]">
+<div class="project-card-trigger relative group overflow-hidden rounded-xl aspect-[16/10] cursor-pointer" data-category="commercial" data-title="The Zenith Hub" data-location="Berlin, DE" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80" data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80|https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs|https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY" data-image-alt="Modern geometric concrete building with glass windows" data-overview="The Zenith Hub is a landmark commercial development in Berlin, combining premium office space with retail and public plazas. The project features a high-performance façade and flexible floor plates for corporate tenants. SPACEDEV delivered full structural, MEP, and façade engineering from concept through completion." data-stat-names="GLA|Floors|Status" data-stat-values="24,000 sqm|18|Completed 2024">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 p-8 flex flex-col justify-end">
 <h5 class="text-2xl font-bold text-white">The Zenith Hub</h5>
 <p class="text-primary font-bold">Berlin, DE</p>
 </div>
 <img alt="Zenith Hub Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern geometric concrete building with glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80"/>
 </div>
-<div class="relative group overflow-hidden rounded-xl aspect-[16/10]">
+<div class="project-card-trigger relative group overflow-hidden rounded-xl aspect-[16/10] cursor-pointer" data-category="residential" data-title="Nova Residences" data-location="Singapore" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ" data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ|https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY|https://lh3.googleusercontent.com/aida-public/AB6AXuD4FYYFmWxfDp2UDJ2b02QpRk6sPuJwjNWwUJEkegtVfPSaPIib65M7VOqCVYPoWnQjSillrzHqZjD7kOhoXoHKXJ-EKEHqSlcxOqxClTo5SzBusnnmDmL5rGP3u4spskSkJRmeGjug3bqOlhPob7zNuAiter0mqeFHw_RlBxM6LzX8RWOAZqKjtGPbg-MmM73GtwfLeOTCsvuvCujY26Geo5i8joAgZ7pLjI1wgWX0KFjcXDIIMBo9cj35gicZ240yA9oX1nlgAT8" data-image-alt="High-end luxury apartment building with greenery on balconies" data-overview="Nova Residences is a high-end residential development in Singapore featuring sustainable materials, green roofs, and seamless indoor-outdoor living. The project emphasizes durability and modern comfort. SPACEDEV managed construction and integration of structural and envelope systems." data-stat-names="Units|Floors|Completion" data-stat-values="84|14|2024">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 p-8 flex flex-col justify-end">
 <h5 class="text-2xl font-bold text-white">Nova Residences</h5>
 <p class="text-primary font-bold">Singapore</p>
@@ -142,7 +136,7 @@ title: SPACEDEV
 </div>
 </section>
 <!-- Process Section -->
-<section class="py-24 bg-background-dark border-y border-white/5 process-section" id="process-section" data-active-step="0">
+<section class="py-24 bg-background-dark border-y border-white/5 process-section scroll-mt-24" id="process-section" data-active-step="0">
     <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-16">
     <h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.35em] mb-4">Our Methodology</h2>
@@ -177,8 +171,8 @@ title: SPACEDEV
 <h2 class="text-background-dark text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to build the extraordinary?</h2>
 <p class="text-background-dark/80 text-lg md:text-xl max-w-xl mb-12">Let's discuss your next project. Our experts are ready to bring your vision to life.</p>
 <div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-background-dark text-white px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:scale-105 transition-transform">Get a Quote</button>
-<button class="bg-transparent border-2 border-background-dark text-background-dark px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:bg-background-dark hover:text-white transition-all">Contact Us</button>
+<button type="button" class="open-quote-modal bg-background-dark text-white px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:scale-105 transition-transform text-center cursor-pointer border-0">Get a Quote</button>
+<a class="bg-transparent border-2 border-background-dark text-background-dark px-10 py-4 rounded-lg font-black uppercase text-sm tracking-widest hover:bg-background-dark hover:text-white transition-all text-center no-underline" href="contact.html">Contact Us</a>
 </div>
 </div>
 </section>
