@@ -8,7 +8,7 @@
   "nav": [
     { "href": "index.html", "label": "Home" },
     { "href": "#", "label": "Services" },
-    { "href": "#", "label": "Projects" },
+    { "href": "projects.html", "label": "Projects" },
     { "href": "about.html", "label": "About Us" },
     { "href": "contact.html", "label": "Contact Us" }
   ],
@@ -16,7 +16,7 @@
     "explore": [
       { "href": "index.html", "label": "Home" },
       { "href": "#", "label": "Services" },
-      { "href": "#", "label": "Projects" },
+      { "href": "projects.html", "label": "Projects" },
       { "href": "about.html", "label": "About Us" },
       { "href": "contact.html", "label": "Contact Us" }
     ],
