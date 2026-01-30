@@ -1,7 +1,7 @@
 {
   "name": "SPACEDEV",
   "tagline": "Space Development Consulting Limited",
-  "description": "Premier construction and development consulting firm delivering excellence in residential, commercial, and infrastructure projects.",
+  "description": "Space Development Consulting Limited—design and build, space remodeling, project and construction management. Premier consulting firm delivering excellence across Nigeria.",
   "copyrightYear": "2026",
   "logo": "assets/logo_clean_1.png",
   "favicon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23C4D602' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='%231A1A1A'%3ESD%3C/text%3E%3C/svg%3E",
@@ -52,6 +52,66 @@
     { "name": "Sarah Mitchell", "role": "Head of Sustainability", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0yukgyz4uXhD7e6TtNlwQfykYJILCsWcnu0iREuxaXH3kYm-B1SeSBgOKVp3RdOr9rjU3MaVOmkeyc3Nx3qA7h7maOZhhfntmHLM6Zw0lUHWjEtjhs6Ac7_d_gB4ZcogXysJqTSoB-n7YeLlf4dseQLaA1pqndRrILA-QTQCyXe5lZx0wfF_-hwUFKRDOE4zlSNHeCs_yfPhnFHGzfUe0B1S0EQq3zmhSk-rzQcqM9dmR4Q5vWwSJYmqi0OPm7hIlh75IatXkHu0", "shortBio": "Champions green building and circular economy practices across every project.", "fullProfile": "Sarah drives SPACEDEV's sustainability strategy and ensures our projects meet the strictest environmental and social governance criteria. She has led certification efforts for multiple LEED Platinum and BREEAM Outstanding buildings. Before joining in 2017, she worked with international NGOs on sustainable housing in emerging markets. Sarah holds an MSc in Environmental Engineering and is a LEED Fellow and BREEAM Assessor." },
     { "name": "James Adeyemi", "role": "Chief Financial Officer", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAcqiEMAlXAjtk_8qsXGIBh14CgXRel9YQ0SlzDeOchqL3qfej4qf711gFJJsH2aQ0R2U0NnAk4OmONDBzRpBJINi-9IH73GXAWtCY-sUHKMohuXkoRsooRoH1cffA9EV2I0_Ty9jdzfoYe2B4a7ds54A3ScsM3Jw7YnVRawgnmsTtJJV76EN8_c41OEF43dy8VWIuHWd1pTKzVR9FZHyQpvAOjePHuPZDxJwZLZY4-2e4LuPMJnGusSTCbQrnSHC4Z09RywJb7qaY", "shortBio": "Leads finance and strategy. Former investment banker with deep infrastructure experience.", "fullProfile": "James joined SPACEDEV as CFO in 2019, bringing two decades of experience in infrastructure finance and M&A. He has structured funding for some of our largest projects and leads our investor relations and strategic planning. Previously, he was a director at a leading investment bank covering construction and real estate across Africa. James is a Chartered Accountant and holds an MBA from INSEAD." }
   ],
+  "profile": {
+    "foundedYear": 2003,
+    "coreServicesSummary": "Design and build, space remodeling, project and construction management.",
+    "coreServices": ["Design and build", "Space remodeling", "Project management", "Construction management"],
+    "approachSummary": "We adopt a systems approach to design and build—our core offering—whereby all projects are broken down into design resolutions, planning and construction phases. We ensure maximum economy in cost, time and quality, and give maximum value to the client.",
+    "philosophy": "Consistently with our philosophy of giving maximum value to the client, we have continually ensured that all our procedures in both design and project management are fully computerized.",
+    "milestones": [
+      { "year": "2003", "title": "Foundation", "description": "Space Development Consulting Limited was formed to render services in design and build, space remodeling, project and construction management.", "icon": "lightbulb" },
+      { "year": "2005", "title": "CAC Registration", "description": "Registered with the Corporate Affairs Commission (February 2005).", "icon": "verified" },
+      { "year": "2006", "title": "Incorporation", "description": "Company incorporated (April 2006).", "icon": "storefront" },
+      { "year": "Present", "title": "Today", "description": "Fully computerized procedures and integrated project delivery; our competitive edge shines through in every final product.", "icon": "rocket_launch" }
+    ],
+    "competitiveEdge": [
+      { "icon": "groups", "title": "Diversity & Integrity", "description": "The diversity in knowledge, skills and experience of our key staff, coupled with competence, character and integrity, shines through in the final product every time." },
+      { "icon": "speed", "title": "Decisive & Responsive", "description": "Decisiveness, responsiveness and flexibility in service delivery." },
+      { "icon": "military_tech", "title": "Committed Teams", "description": "A holistic evaluation, motivation and reward system ensures our staff are not only committed but synergistic in the discharge of their assignments." }
+    ],
+    "howWeWork": [
+      { "step": "01", "title": "Define scope", "description": "Project scope is defined from a careful identification of objectives in terms of time, budget and technical requirements." },
+      { "step": "02", "title": "Plan", "description": "Detailed planning in terms of cost, time and quality is undertaken to give life to the project. Change management criteria is clarified with the client before implementation." },
+      { "step": "03", "title": "Execute", "description": "After a satisfactory action plan is determined, we proceed to execution—with feedback to planning as the project evolves. Progress on time, quality, expenditure and scope is reported to key stakeholders periodically." }
+    ]
+  },
+  "about": {
+    "mission": "We deliver world-class construction and development solutions—from landmark commercial buildings to sustainable residential communities—transforming visions into reality across Nigeria and beyond.",
+    "whoWeAre": "Space Development Consulting Limited is a premier construction and development consulting firm headquartered in Lagos. We were formed in 2003 to deliver design and build, space remodeling, and project and construction management.",
+    "whyChooseUs": [
+      { "icon": "schedule", "title": "23+ Years", "description": "Since 2003—structural excellence and trusted delivery across the nation." },
+      { "icon": "apartment", "title": "115+ Projects", "description": "Iconic landmarks delivered on time and beyond scope." },
+      { "icon": "eco", "title": "Sustainability First", "description": "LEED, BREEAM and net-zero construction at the core." },
+      { "icon": "engineering", "title": "Systems Approach", "description": "Design, planning and construction. Maximizing cost, time and quality." },
+      { "icon": "computer", "title": "Fully Computerized", "description": "Design and project management procedures are fully computerized." }
+    ],
+    "values": [
+      { "name": "Integrity", "description": "Competence, character and integrity on every project—we build trust through transparency and ethical practice." },
+      { "name": "Decisiveness", "description": "Decisiveness, responsiveness and flexibility in service so we deliver when it matters." },
+      { "name": "Excellence", "description": "We set the gold standard in quality, delivery and client partnership; maximum value to the client." },
+      { "name": "Synergy", "description": "Holistic evaluation, motivation and reward—our staff are committed and synergistic in every assignment." }
+    ],
+    "stats": [
+      { "label": "Experience", "value": "23+", "description": "Years of structural excellence since 2003 across the nation." },
+      { "label": "Completed", "value": "115+", "description": "Iconic landmarks delivered on time and beyond scope." },
+      { "label": "Awards", "value": "16", "description": "National awards for sustainability and design." }
+    ],
+    "timeline": [
+      { "year": "2003", "title": "Foundation", "description": "Space Development Consulting Limited was formed to render services in design and build, space remodeling, project and construction management.", "icon": "lightbulb" },
+      { "year": "2005", "title": "CAC Registration", "description": "Registered with the Corporate Affairs Commission (February 2005).", "icon": "verified" },
+      { "year": "2006", "title": "Incorporation", "description": "Company incorporated (April 2006).", "icon": "storefront" },
+      { "year": "Present", "title": "Today", "description": "Fully computerized procedures and integrated project delivery; our competitive edge shines through in every final product.", "icon": "rocket_launch" }
+    ],
+    "certifications": [
+      { "name": "LEED" },
+      { "name": "BREEAM" },
+      { "name": "COREN" },
+      { "name": "NIA" }
+    ],
+    "offices": [
+      { "name": "Headquarters", "description": "18 Rafiu Shittu Street, Alaka Estate, Surulere, Lagos.", "href": "contact.html" }
+    ]
+  },
   "clients": [
     { "src": "assets/clients/access_logo_transparent.png", "alt": "Access Bank" },
     { "src": "assets/clients/alml_logo.png", "alt": "ALML" },
