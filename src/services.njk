@@ -11,62 +11,45 @@ permalink: /services.html
   Construction & development consulting for every scale.
 </h1>
 <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-  From commercial towers to residential communities and industrial facilities—full design, engineering, and delivery support.
+  Our core offering: {{ site.profile.coreServicesSummary }} From commercial towers to residential communities and industrial facilities—full design, engineering, and delivery support.
 </p>
 </div>
 </section>
 
 <section class="max-w-7xl mx-auto px-6 pb-20 space-y-12 md:space-y-16">
-<article id="commercial" class="service-block group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] hover:border-primary/40 transition-all duration-300 scroll-mt-24">
+{% for service in site.services %}
+<article id="{{ service.id }}" class="service-block group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] hover:border-primary/40 transition-all duration-300 scroll-mt-24">
 <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[320px] md:min-h-[380px]">
+{% if not (loop.index is divisibleby(2)) %}
 <div class="service-block__image-wrap relative overflow-hidden order-2 lg:order-1">
-<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY" alt="Commercial construction"/>
+<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="{{ service.image }}" alt="{{ service.alt }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
 </div>
 <div class="service-block__content flex flex-col justify-center p-8 md:p-10 order-1 lg:order-2">
-<div class="service-block__icon-wrap w-16 h-16 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300 group-hover:scale-110">
-<span class="material-symbols-outlined text-4xl">domain</span>
-</div>
-<h2 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">Commercial</h2>
-<p class="text-gray-400 leading-relaxed mb-6 max-w-lg">Adaptive workspaces, tech-forward headquarters, mixed-use and retail. Full design, structural, MEP, and façade engineering. LEED and BREEAM certification.</p>
-<a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all w-fit" href="contact.html">Get a quote <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-</div>
-</article>
-
-<article id="residential" class="service-block group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] hover:border-primary/40 transition-all duration-300 scroll-mt-24">
-<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[320px] md:min-h-[380px]">
+{% else %}
 <div class="service-block__content flex flex-col justify-center p-8 md:p-10 lg:order-1">
+{% endif %}
 <div class="service-block__icon-wrap w-16 h-16 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300 group-hover:scale-110">
-<span class="material-symbols-outlined text-4xl">home_iot_device</span>
+<span class="material-symbols-outlined text-4xl">{{ service.icon }}</span>
 </div>
-<h2 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">Residential</h2>
-<p class="text-gray-400 leading-relaxed mb-6 max-w-lg">Ultra-luxury smart homes and sustainable communities. High-rise, mid-rise, estates and villas—structural excellence and modern comfort.</p>
+<h2 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">{{ service.title }}</h2>
+<p class="text-gray-400 leading-relaxed mb-6 max-w-lg">{{ service.shortDescription }}</p>
+<ul class="space-y-2 mb-6">
+{% for item in service.items %}
+<li class="text-gray-400 text-sm flex items-start gap-2"><span class="text-primary mt-1.5 shrink-0">•</span><span>{{ item }}</span></li>
+{% endfor %}
+</ul>
 <a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all w-fit" href="contact.html">Get a quote <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
+{% if loop.index is divisibleby(2) %}
 <div class="service-block__image-wrap relative overflow-hidden lg:order-2">
-<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY" alt="Residential construction"/>
+<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="{{ service.image }}" alt="{{ service.alt }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
 </div>
+{% endif %}
 </div>
 </article>
-
-<article id="industrial" class="service-block group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] hover:border-primary/40 transition-all duration-300 scroll-mt-24">
-<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[320px] md:min-h-[380px]">
-<div class="service-block__image-wrap relative overflow-hidden order-2 lg:order-1">
-<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCelIspauw4zLWKbtXLASYUeZNCPBL_dLWG2e-jN5nCTc7UrJ5VzFR3Qf3fAjAcLGLOG384ZTS0MweFOjm-ugNS_L3IHIEE2bz8wy5EVoctYDSgJZYXkUrx6C_rmGVIrI19yCN1m_KbCEhV96nhV71mMQVTeTFfSfhwSs-O3Vcze5nQEbP9eZMZOrkmBDaQy4kvYEQEMkLZ-IIkmNs9K1yC8WF6BhwBK_AD20N_NfVGkHfHOqiMSTgPdIT0bY2TROsiPE95lgIMP3E" alt="Industrial construction"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
-</div>
-<div class="service-block__content flex flex-col justify-center p-8 md:p-10 order-1 lg:order-2">
-<div class="service-block__icon-wrap w-16 h-16 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300 group-hover:scale-110">
-<span class="material-symbols-outlined text-4xl">factory</span>
-</div>
-<h2 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">Industrial</h2>
-<p class="text-gray-400 leading-relaxed mb-6 max-w-lg">Warehouses, distribution centers, manufacturing plants and cold storage. High-performance logistics hubs built for efficiency and scale.</p>
-<a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all w-fit" href="contact.html">Get a quote <span class="material-symbols-outlined">arrow_forward</span></a>
-</div>
-</div>
-</article>
+{% endfor %}
 </section>
 
 <section class="border-t border-white/10 py-16 px-6">

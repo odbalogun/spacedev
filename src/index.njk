@@ -72,41 +72,23 @@ title: SPACEDEV
     </div>
     <div class="flex flex-col lg:flex-row gap-12">
     <div class="w-full lg:w-1/3 space-y-4">
-    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group" data-active="true">
+    {% for service in site.services %}
+    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group {% if loop.first %}border-l-4 border-primary{% else %}border-l-4 border-white/5 hover:border-primary/50{% endif %}" data-active="{% if loop.first %}true{% else %}false{% endif %}">
     <div class="text-primary mb-4">
-    <span class="material-symbols-outlined text-4xl">domain</span>
+    <span class="material-symbols-outlined text-4xl">{{ service.icon }}</span>
     </div>
-    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Commercial</h4>
-    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Adaptive workspaces and tech-forward headquarters designed for the digital workforce of tomorrow.</p>
-    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#commercial">
-                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">{{ service.title }}</h4>
+    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">{{ service.shortDescription }}</p>
+    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#{{ service.id }}">
+    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
     </a>
     </div>
-    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group border-l-4 border-white/5 hover:border-primary/50" data-active="false">
-    <div class="text-primary mb-4">
-    <span class="material-symbols-outlined text-4xl">home_iot_device</span>
-    </div>
-    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Residential</h4>
-    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">Ultra-luxury smart homes and sustainable living communities that redefine modern comfort.</p>
-    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#residential">
-                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
-    </a>
-    </div>
-    <div class="service-tab p-8 cursor-pointer transition-all duration-300 group border-l-4 border-white/5 hover:border-primary/50" data-active="false">
-    <div class="text-primary mb-4">
-    <span class="material-symbols-outlined text-4xl">factory</span>
-    </div>
-    <h4 class="text-2xl font-extrabold text-white mb-4 tracking-tight">Industrial</h4>
-    <p class="text-gray-400 font-medium leading-relaxed text-sm mb-6">High-performance industrial facilities and logistics hubs optimized for peak operational efficiency.</p>
-    <a class="flex items-center gap-3 text-xs font-black text-primary uppercase tracking-widest group-hover:gap-5 transition-all" href="services.html#industrial">
-                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
-    </a>
-    </div>
+    {% endfor %}
     </div>
     <div class="w-full lg:w-2/3 h-[400px] lg:h-auto min-h-[500px] rounded-2xl overflow-hidden relative">
-    <img alt="Commercial Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="true" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80"/>
-    <img alt="Residential Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="false" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj8F6YcrmnFM7QeTlAclrbn4_o32f_3hIPqJ2rk3u5aEqne_O4uyR6_i0cUrq6lUcRhh9U_yB-LuR3lJTj0Pve9_WeEnie9uxatSizYt_2Kq2iTz1tmM39VEcvxcfCcgTP_W-B2ZXOikO95ZvnGPjYCQil_atAi05CtHIz6Tw-S_iNUZNcBHnmzN8ywN22_WzSgd0J0KloIOn4aPV9WlIo55sA-kXCGzuVGsXoLJQcH8mc9P92G6gLVFTtbfGuWsgm5R6Zslf9YFQ"/>
-    <img alt="Industrial Expertise" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="false" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD866eRGNfhLUWfGHT7bGarKLYfCZjypMHghJtHkoNo6PJZbLHpLEjpqURBHmeG--k-YDKGgHyOUfsvEtR7OtByCnRf9exlN0X-vpe6dQ9FFXJLE6PBjsS0poncJ0yQP5vuTEvdvjjxph8rrCKSuswyUAlL5WZmZrNb1f_CecY_l5AhXPf6qGQM1bND8Ryb5v7X_kkGU5RvcpvY4SsWe-MZE7LMtA_yGuFQEDWVTRpYRfupMRYyfHZOv3rinBizvOsTgZhL0I5dSls"/>
+    {% for service in site.services %}
+    <img alt="{{ service.alt }}" class="service-image absolute inset-0 w-full h-full object-cover transition-opacity duration-700" data-active="{% if loop.first %}true{% else %}false{% endif %}" src="{{ service.image }}"/>
+    {% endfor %}
     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
     </div>
     </div>

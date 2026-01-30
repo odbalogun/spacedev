@@ -52,6 +52,58 @@
     { "name": "Sarah Mitchell", "role": "Head of Sustainability", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0yukgyz4uXhD7e6TtNlwQfykYJILCsWcnu0iREuxaXH3kYm-B1SeSBgOKVp3RdOr9rjU3MaVOmkeyc3Nx3qA7h7maOZhhfntmHLM6Zw0lUHWjEtjhs6Ac7_d_gB4ZcogXysJqTSoB-n7YeLlf4dseQLaA1pqndRrILA-QTQCyXe5lZx0wfF_-hwUFKRDOE4zlSNHeCs_yfPhnFHGzfUe0B1S0EQq3zmhSk-rzQcqM9dmR4Q5vWwSJYmqi0OPm7hIlh75IatXkHu0", "shortBio": "Champions green building and circular economy practices across every project.", "fullProfile": "Sarah drives SPACEDEV's sustainability strategy and ensures our projects meet the strictest environmental and social governance criteria. She has led certification efforts for multiple LEED Platinum and BREEAM Outstanding buildings. Before joining in 2017, she worked with international NGOs on sustainable housing in emerging markets. Sarah holds an MSc in Environmental Engineering and is a LEED Fellow and BREEAM Assessor." },
     { "name": "James Adeyemi", "role": "Chief Financial Officer", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAcqiEMAlXAjtk_8qsXGIBh14CgXRel9YQ0SlzDeOchqL3qfej4qf711gFJJsH2aQ0R2U0NnAk4OmONDBzRpBJINi-9IH73GXAWtCY-sUHKMohuXkoRsooRoH1cffA9EV2I0_Ty9jdzfoYe2B4a7ds54A3ScsM3Jw7YnVRawgnmsTtJJV76EN8_c41OEF43dy8VWIuHWd1pTKzVR9FZHyQpvAOjePHuPZDxJwZLZY4-2e4LuPMJnGusSTCbQrnSHC4Z09RywJb7qaY", "shortBio": "Leads finance and strategy. Former investment banker with deep infrastructure experience.", "fullProfile": "James joined SPACEDEV as CFO in 2019, bringing two decades of experience in infrastructure finance and M&A. He has structured funding for some of our largest projects and leads our investor relations and strategic planning. Previously, he was a director at a leading investment bank covering construction and real estate across Africa. James is a Chartered Accountant and holds an MBA from INSEAD." }
   ],
+  "services": [
+    {
+      "id": "design-build",
+      "title": "Design & Build",
+      "shortDescription": "From client brief to construction—conceptual design, drawings, documentation, construction, and full contract management.",
+      "icon": "architecture",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80",
+      "alt": "Design and build—conceptual design to construction",
+      "items": [
+        "Defining clients brief",
+        "Conceptual design",
+        "Presentation drawings",
+        "Construction drawings & documentation",
+        "Construction proper",
+        "Construction management",
+        "Procurement management",
+        "Contract management"
+      ]
+    },
+    {
+      "id": "project-management",
+      "title": "Project Management",
+      "shortDescription": "Facilitation of project delivery, construction and remodeling works, process overhaul, cost and contract management, planning and scheduling.",
+      "icon": "assignment",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY",
+      "alt": "Project management and delivery",
+      "items": [
+        "Facilitation of project delivery",
+        "Management of construction/remodeling works",
+        "Management of process overhaul",
+        "Construction project management",
+        "Cost and contract management",
+        "Planning and scheduling support"
+      ]
+    },
+    {
+      "id": "consulting",
+      "title": "Consulting",
+      "shortDescription": "Architectural consultancy, planning and scheduling of complex projects, monitoring and control systems, risk analysis and tool evaluation.",
+      "icon": "support_agent",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs",
+      "alt": "Consulting and advisory services",
+      "items": [
+        "Architectural consultancy services",
+        "Planning and scheduling of complex projects",
+        "Design of project monitoring and control systems",
+        "Enterprise-wide project management implementation",
+        "Project risks analysis and quantification",
+        "Selection/Evaluation of project management tools"
+      ]
+    }
+  ],
   "profile": {
     "foundedYear": 2003,
     "coreServicesSummary": "Design and build, space remodeling, project and construction management.",

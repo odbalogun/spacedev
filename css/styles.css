@@ -524,7 +524,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 0.75rem;
     opacity: 1;
     transition: opacity 0.3s ease;
 }
@@ -545,8 +545,8 @@ body {
 .project-modal-panel {
     position: relative;
     width: 100%;
-    max-width: 56rem;
-    max-height: calc(100vh - 3rem);
+    max-width: 80rem;
+    max-height: calc(100vh - 1.5rem);
     background: rgba(26, 26, 26, 0.98);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
@@ -583,7 +583,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    max-height: calc(100vh - 3rem);
+    max-height: calc(100vh - 1.5rem);
 }
 @media (max-width: 768px) {
     .project-modal-content {
@@ -592,22 +592,22 @@ body {
 }
 .project-modal-gallery {
     position: relative;
-    min-height: 12rem;
-    max-height: calc(100vh - 3rem);
+    min-height: 14rem;
+    max-height: calc(100vh - 1.5rem);
     background: #0a0a0a;
 }
 .project-modal-image-wrap {
     width: 100%;
     height: 100%;
-    min-height: 16rem;
-    max-height: calc(100vh - 3rem);
+    min-height: 18rem;
+    max-height: calc(100vh - 1.5rem);
     position: relative;
 }
 .project-modal-image {
     width: 100%;
     height: 100%;
-    min-height: 16rem;
-    max-height: calc(100vh - 3rem);
+    min-height: 18rem;
+    max-height: calc(100vh - 1.5rem);
     object-fit: cover;
     display: block;
     transition: opacity 0.25s ease;
