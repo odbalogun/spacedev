@@ -376,7 +376,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .team-modal:not(.hidden) {
     display: flex;
@@ -386,13 +386,55 @@ body {
 }
 .team-modal-box {
     position: relative;
-    max-height: calc(90vh - 4rem);
+    max-width: 64rem;
+    max-height: calc(90vh - 3rem);
 }
 .team-modal-panel.hidden {
     display: none !important;
 }
 .team-modal-panel:not(.hidden) {
     display: flex !important;
+}
+.team-modal-body {
+    max-width: 42em;
+}
+.team-modal-heading {
+    letter-spacing: 0.15em;
+    color: rgba(195, 212, 2, 0.95);
+}
+.team-modal-list {
+    list-style: none;
+    padding-left: 0;
+}
+.team-modal-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+.team-modal-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    background: #c3d402;
+}
+.team-modal-profile {
+    color: rgba(209, 213, 219, 0.95);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.team-modal-profile p {
+    margin-bottom: 1rem;
+}
+.team-modal-profile p:last-child {
+    margin-bottom: 0;
+}
+.team-modal-profile p + p {
+    margin-top: 0.25rem;
 }
 
 /* Quote request modal (header button) */
