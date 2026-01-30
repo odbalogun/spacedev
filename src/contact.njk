@@ -87,9 +87,11 @@ permalink: /contact.html
 </div>
 <!-- Right: Contact Form -->
 <div class="lg:col-span-7">
+<div id="contact-success" class="hidden mb-6 p-4 rounded-lg bg-primary/20 border border-primary/40 text-primary font-medium" role="alert">Thanks! Your message was sent. We’ll get back within 24 hours.</div>
+<div id="contact-error" class="hidden mb-6 p-4 rounded-lg bg-red-500/20 border border-red-500/40 text-red-400 font-medium" role="alert">Something went wrong. Please try again or email us directly.</div>
 <div class="bg-white/5 p-8 md:p-10 rounded-2xl border border-white/10 shadow-xl relative overflow-hidden">
 <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
-<form class="space-y-6 relative z-10" action="#" method="post">
+<form class="space-y-6 relative z-10" action="{{ site.formEndpoint }}" method="post">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="text-sm font-medium text-white" for="contact-name">Full Name</label>
@@ -126,3 +128,12 @@ permalink: /contact.html
 </div>
 </div>
 </section>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var success = document.getElementById('contact-success');
+  var err = document.getElementById('contact-error');
+  if (params.get('sent') === '1' && success) success.classList.remove('hidden');
+  if (params.get('error') === '1' && err) err.classList.remove('hidden');
+})();
+</script>

@@ -30,8 +30,10 @@ Opens http://localhost:8080 with live reload.
 
 1. Run **`npm run build`** on your machine.
 2. Upload the **contents** of the `dist/` folder to your web root (e.g. `public_html/` or `www/`) via FTP, SFTP, or your host’s file manager.
-   - Upload: `dist/index.html`, `dist/css/`, `dist/js/`, `dist/assets/`.
+   - Upload: `dist/index.html`, `dist/css/`, `dist/js/`, `dist/assets/`, **`dist/send.php`**.
    - Do **not** upload the `src/` folder or `node_modules/`; the host only needs what’s in `dist/`.
+
+**Contact / quote form:** The form submits to **`send.php`**, which sends email to **info@spacedevconsulting.com**. Your host must support **PHP** (shared hosting with PHP is fine). If `mail()` is disabled or emails go to spam, use PHPMailer with SMTP instead (edit `send.php`).
 
 ## Editing the site
 

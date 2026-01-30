@@ -9,6 +9,7 @@
 {{ content | safe }}
 </main>
 {% include "partials/footer.njk" %}
+{% include "partials/quote-modal.njk" %}
 <script>
     // Tab Interaction Logic for Services
     const tabs = document.querySelectorAll('.service-tab');
@@ -41,6 +42,32 @@
             processSection.setAttribute('data-active-step', '0');
         });
     }
+
+    // Quote request modal
+    (function () {
+        var modal = document.getElementById('quote-modal');
+        var openBtn = document.getElementById('request-quote-btn');
+        var backdrop = document.getElementById('quote-modal-backdrop');
+        var closeBtn = document.getElementById('quote-modal-close');
+        if (!modal || !openBtn) return;
+        function openModal() {
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            closeBtn && closeBtn.focus();
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        openBtn.addEventListener('click', openModal);
+        backdrop && backdrop.addEventListener('click', closeModal);
+        closeBtn && closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    })();
 </script>
 </body>
 </html>
