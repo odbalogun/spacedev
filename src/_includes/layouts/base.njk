@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+{% include "partials/head.njk" %}
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden">
+{% include "partials/header.njk" %}
+<main class="pt-0">
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+{% include "partials/quote-modal.njk" %}
+{% include "partials/project-modal.njk" %}
+<script>
+    // Tab Interaction Logic for Services
+    const tabs = document.querySelectorAll('.service-tab');
+    const images = document.querySelectorAll('.service-image');
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('mouseenter', () => {
+            tabs.forEach(t => {
+                t.setAttribute('data-active', 'false');
+                t.classList.remove('border-primary');
+                t.classList.add('border-white/5');
+            });
+            tab.setAttribute('data-active', 'true');
+            tab.classList.add('border-primary');
+            tab.classList.remove('border-white/5');
+            images.forEach(img => img.setAttribute('data-active', 'false'));
+            images[index].setAttribute('data-active', 'true');
+        });
+    });
+
+    // Process section: animate timeline on step hover
+    const processSection = document.getElementById('process-section');
+    if (processSection) {
+        const steps = processSection.querySelectorAll('.process-step');
+        steps.forEach((step) => {
+            step.addEventListener('mouseenter', () => {
+                processSection.setAttribute('data-active-step', step.getAttribute('data-step'));
+            });
+        });
+        processSection.addEventListener('mouseleave', () => {
+            processSection.setAttribute('data-active-step', '0');
+        });
+    }
+
+    // Quote request modal
+    (function () {
+        var modal = document.getElementById('quote-modal');
+        var openBtn = document.getElementById('request-quote-btn');
+        var backdrop = document.getElementById('quote-modal-backdrop');
+        var closeBtn = document.getElementById('quote-modal-close');
+        if (!modal || !openBtn) return;
+        function openModal() {
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            closeBtn && closeBtn.focus();
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        openBtn.addEventListener('click', openModal);
+        document.querySelectorAll('.open-quote-modal').forEach(function (btn) {
+            btn.addEventListener('click', openModal);
+        });
+        backdrop && backdrop.addEventListener('click', closeModal);
+        closeBtn && closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    })();
+
+    // Project detail modal (used on index featured projects and projects page)
+    (function () {
+        var modal = document.getElementById('project-modal');
+        var backdrop = document.getElementById('project-modal-backdrop');
+        var closeBtn = document.getElementById('project-modal-close');
+        var imageEl = document.getElementById('project-modal-image');
+        var titleEl = document.getElementById('project-modal-title');
+        var categoryEl = document.getElementById('project-modal-category');
+        var locationEl = document.getElementById('project-modal-location');
+        var statsEl = document.getElementById('project-modal-stats');
+        var overviewEl = document.getElementById('project-modal-overview');
+        var dotsEl = document.getElementById('project-modal-dots');
+        var prevBtn = document.getElementById('project-modal-gallery-prev');
+        var nextBtn = document.getElementById('project-modal-gallery-next');
+        if (!modal) return;
+        var currentImages = [];
+        var currentImageIndex = 0;
+        function setGalleryImage(index) {
+            if (currentImages.length === 0) return;
+            currentImageIndex = (index + currentImages.length) % currentImages.length;
+            imageEl.src = currentImages[currentImageIndex];
+            if (dotsEl.children.length) {
+                for (var i = 0; i < dotsEl.children.length; i++) {
+                    dotsEl.children[i].classList.toggle('active', i === currentImageIndex);
+                    dotsEl.children[i].setAttribute('aria-current', i === currentImageIndex ? 'true' : 'false');
+                }
+            }
+            prevBtn.style.display = currentImages.length > 1 ? '' : 'none';
+            nextBtn.style.display = currentImages.length > 1 ? '' : 'none';
+        }
+        function escapeHtml(s) {
+            var div = document.createElement('div');
+            div.textContent = s;
+            return div.innerHTML;
+        }
+        function openModal(card) {
+            var title = card.getAttribute('data-title') || '';
+            var category = card.getAttribute('data-category') || '';
+            var location = card.getAttribute('data-location') || '';
+            var overview = card.getAttribute('data-overview') || card.getAttribute('data-description') || '';
+            var imagesStr = card.getAttribute('data-images') || card.getAttribute('data-image') || '';
+            currentImages = imagesStr.split('|').filter(Boolean);
+            var namesStr = card.getAttribute('data-stat-names') || '';
+            var valuesStr = card.getAttribute('data-stat-values') || '';
+            var names = namesStr.split('|').filter(Boolean);
+            var values = valuesStr.split('|').filter(Boolean);
+            titleEl.textContent = title;
+            categoryEl.textContent = category ? category.charAt(0).toUpperCase() + category.slice(1) : '';
+            locationEl.textContent = location;
+            overviewEl.textContent = overview;
+            imageEl.alt = card.getAttribute('data-image-alt') || title;
+            statsEl.innerHTML = '';
+            for (var i = 0; i < names.length && i < values.length; i++) {
+                var stat = document.createElement('div');
+                stat.className = 'project-modal-stat';
+                stat.innerHTML = '<span class="project-modal-stat-label">' + escapeHtml(names[i]) + '</span><span class="project-modal-stat-value">' + escapeHtml(values[i]) + '</span>';
+                statsEl.appendChild(stat);
+            }
+            dotsEl.innerHTML = '';
+            for (var j = 0; j < currentImages.length; j++) {
+                var dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'project-modal-dot' + (j === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Image ' + (j + 1));
+                dot.setAttribute('aria-current', j === 0 ? 'true' : 'false');
+                (function (idx) { dot.addEventListener('click', function () { setGalleryImage(idx); }); })(j);
+                dotsEl.appendChild(dot);
+            }
+            currentImageIndex = 0;
+            setGalleryImage(0);
+            dotsEl.style.display = currentImages.length > 1 ? 'flex' : 'none';
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        if (prevBtn) prevBtn.addEventListener('click', function () { setGalleryImage(currentImageIndex - 1); });
+        if (nextBtn) nextBtn.addEventListener('click', function () { setGalleryImage(currentImageIndex + 1); });
+        document.body.addEventListener('click', function (e) {
+            var card = e.target.closest('.project-card-trigger');
+            if (!card || card.classList.contains('projects-hidden')) return;
+            e.preventDefault();
+            openModal(card);
+        });
+        if (backdrop) backdrop.addEventListener('click', closeModal);
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    })();
+</script>
+</body>
+</html>

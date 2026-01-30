@@ -1,0 +1,179 @@
+{
+  "name": "SPACEDEV",
+  "tagline": "Space Development Consulting Limited",
+  "description": "Space Development Consulting Limited—design and build, space remodeling, project and construction management. Premier consulting firm delivering excellence across Nigeria.",
+  "copyrightYear": "2026",
+  "logo": "assets/logo_clean_1.png",
+  "favicon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23C4D602' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='65' font-size='50' font-weight='bold' text-anchor='middle' fill='%231A1A1A'%3ESD%3C/text%3E%3C/svg%3E",
+  "formEndpoint": "/send.php",
+  "nav": [
+    { "href": "index.html", "label": "Home" },
+    { "href": "services.html", "label": "Services" },
+    { "href": "projects.html", "label": "Projects" },
+    { "href": "about.html", "label": "About Us" },
+    { "href": "contact.html", "label": "Contact Us" }
+  ],
+  "footer": {
+    "explore": [
+      { "href": "index.html", "label": "Home" },
+      { "href": "services.html", "label": "Services" },
+      { "href": "projects.html", "label": "Projects" },
+      { "href": "about.html", "label": "About Us" },
+      { "href": "contact.html", "label": "Contact Us" }
+    ],
+    "company": [
+      { "href": "about.html", "label": "About Us" },
+      { "href": "#", "label": "Our Team" },
+      { "href": "contact.html", "label": "Contact Us" }
+    ],
+    "tagline": "Setting the gold standard in high-end construction and modern architecture.",
+    "address": {
+      "lines": ["18 Rafiu Shittu Street,", "Alaka Estate,", "Surulere,", "Lagos."]
+    },
+    "contact": {
+      "phone": "+234 802 303 4908",
+      "phoneSecondary": "+234 803 617 3169",
+      "phoneHours": "Mon–Fri, 9am – 6pm WAT",
+      "email": "info@spacedevconsulting.com",
+      "emailSecondary": "projects@spacedevconsulting.com"
+    }
+  },
+  "social": [
+    { "name": "Instagram", "href": "#", "ariaLabel": "Instagram" },
+    { "name": "LinkedIn", "href": "#", "ariaLabel": "LinkedIn" },
+    { "name": "Facebook", "href": "#", "ariaLabel": "Facebook" },
+    { "name": "Twitter", "href": "#", "ariaLabel": "Twitter" }
+  ],
+  "team": [
+    { "name": "K. Oluwatosin Sunmonu", "role": "Managing Director", "image": "assets/team/Tosin Sunmonu.png", "shortBio": "Graduate Member, Nigeria Institute of Architects. Director of SPACEDEV; former Project Manager at CPMS and head of construction at SAS Consultants.", "qualifications": ["Graduate Member, Nigeria Institute of Architects", "M.Sc. Housing, University of Ibadan (2010)", "HND Architecture, Yaba College of Technology (1998/99)"], "profile": ["Mr. Sunmonu is a director of Space Development Consulting Limited. Prior to founding this organisation, he worked for Comprehensive Project Management Services Limited (CPMS Ltd), a pioneer project management firm in Nigeria, where he worked for 5 years and rose to the level of Project Manager. Subsequently, he worked with SAS Consultants, a major player in the design & build segment of the construction industry (July–December 2004), where he was head of the construction department.", "While at CPMS, he participated actively in the branch expansion networks of Guaranty Trust Bank Plc. (now GTBank), handling a number of branches from conceptual design stage to the post-construction phase. Some of the branches include Ikeja 2, Abuja, Yola, Calabar and Akure, among others.", "He also worked on other projects such as Funtaj International Secondary School, Kuje, Abuja; luxury town houses for First Marina Trust at Banana Island, Ikoyi; and a 10-storey luxury residential development along Cooper Road, Ikoyi, for Cooper Investment Limited, among others.", "He is versatile in the use of architectural software and Microsoft Office applications."] },
+    { "name": "Uche Isiadinso", "role": "Construction/Project Director", "image": "assets/team/Uche Isiadinso.png", "shortBio": "Chartered engineer; ICE, NSE, CMI, COREN. B.Sc. Civil, M.Sc. Structural; PMP, CEng, Eur-Ing. Former Arbico, BCL, Capita, Mott MacDonald.", "qualifications": ["B.Sc. Civil Engineering (Nigeria)", "M.Sc. Structural Engineering (UK)", "PMP (Project Management Professional)", "DIC MICE, MNSE, CMngr, COREN CEng", "CEng (Chartered Engineer), Eur-Ing (European Engineer)", "Member: ICE (Institution of Civil Engineers), NSE (Nigerian Society of Engineers), CMI (Chartered Management Institute), COREN (Council for the Regulation of Engineers in Nigeria)"], "profile": ["Uche is a chartered engineer and a member of ICE (Institution of Civil Engineers), NSE (Nigerian Society of Engineers), CMI (Chartered Management Institute) and COREN (Council for the Regulation of Engineers in Nigeria). Along his career path, he has both contributed and broadened his experience at Arbico Plc as Deputy General Manager, BCL Construction and Civil Engineering as Deputy Managing Director, Capita Property and Infrastructure / Capita Norman + Dawbarn as Operations Director, Mott MacDonald Limited as Project Manager, and Senior Project Engineer at Mouchel Group.", "Uche has been directly responsible for the profit and loss for commercial and residential projects in addition to management and supervision of the construction team. While at BCL, he brought in and completed high-profile projects including Cornerstone Towers (Victoria Island, Lagos), Alliance Towers (Ikoyi, Lagos), Exxon Mobil Nigeria projects, and other landmark projects.", "When Uche is required to take his mind off work he likes to engage in athletics and swimming. He is married and currently lives in Nigeria."] },
+    { "name": "Paul Ekanem Ekott", "role": "Head, Design Studio", "image": "assets/team/Paul Ekott.png", "shortBio": "Full Reg. Member MNIA, Registered Architect ARCON. M.Env Design, B.Sc. (Hons) Architecture. Former TEECEES, Bravura, Alphamead, New Order Partnership.", "qualifications": ["Full Reg. Member (M/4252) – MNIA (2021)", "Registered Architect (F/4025) – ARCON (2017)", "Masters in Environmental Design (Architecture, 2014)", "B.Sc. (Hons) Architecture (2012, Second Class Upper Division)", "National Diploma Architecture (2007, Second Class Upper Credit)"], "profile": ["He began his career as trainee architect, design architect and assistant architect with TEECEES Nigeria Limited (TNL) and later BRAVURA ARCHITECTS (BA). At these firms, he handled Design and Build of projects: Victoria Court, Osborne Foreshore, as well as MTN Experience Centre, AOT terrace house, Aiyepe Urban Planning.", "Before joining Spacedev Limited, he had a stint with ALPHAMEAD DEVELOPMENT COMPANY where he handled design proposal of projects (Grace Field Island, Lekki Pearl, Sangotedo Lekki Lagos) and site supervision and renovation of Residential Complex, Milverton Ikoyi. He performed multiple roles in site supervision, report interpretation, presentation and recommendations.", "Arc. Ekott was an African participant at the 2nd International Congress on Sustainability and Affordable Housing International Student Competition (April 2012)—Ilha do Pavão Sustainable Neighbourhood, held at Porto Alegre, Brazil.", "Prior to joining Spacedev, he had worked with ALPHAMEAD DEVELOPMENT COMPANY and NEW ORDER PARTNERSHIP (NOP). He is a full member of Nigeria Institute of Architects (MNIA) and the Architects Registration Council of Nigeria (ARCON)."] },
+    { "name": "Olatunde Babalola", "role": "Commercial Director", "image": "assets/team/Olatunde Babalola.png", "shortBio": "Dynamic quantity surveyor and project manager. Former CPMS; project costing, risk management, bill of quantities. Oakwood Park, Protea Hotels, Oando retail outlets.", "profile": ["Tunde is a dynamic quantity surveyor who has demonstrated reliability, tremendous concentration, team spirit and leadership qualities. He is also a project manager. He also worked in CPMS, where he acquired the skill of project costing and risk management through several seminars he facilitated while at CPMS and thereafter.", "While at CPMS (2000–2005), he gained early experience in project delivery while working on the upgrading of Oando (formerly Unipetrol) retail outlets. While in CPMS, he worked as a site officer before assisting his senior colleagues in coordinating project documents and subsequently preparation of bill of quantities.", "He also worked on other projects such as hotel and training conference centre for Oakwood Park, Protea Hotels, Lekki. He has brought his wealth of experience in the management of project cost by competitive pricing of bill of quantities. He is also very versatile in the use of Microsoft Office applications."] },
+    { "name": "Gbenga Sunmonu", "role": "Project Manager", "image": "assets/team/Gbenga Sunmonu.png", "shortBio": "Graduate Member NIM. HND Civil Engineering, Ilaro; Project Management, Unilag. Project Manager at SPACEDEV since 2006; Sterling Bank, Access Bank, Oceanic Bank, RCCG.", "qualifications": ["Graduate Member, Nigerian Institute of Management (NIM)", "HND, Civil Engineering, Ilaro (2005)", "Project Management, Unilag (2009)"], "profile": ["An experienced project manager in the field of construction, a graduate member of NIM and civil engineer by practice. He has been a project manager at Space Development Consulting Limited since 2006.", "He worked on several projects where he gathered experience in construction and project management skills. He supervised projects such as major residential and commercial projects, also religious buildings such as RCCG, Good Shepherd Pasture, Alagomeji, Yaba, as well as remodeling of Sterling Bank, Access Bank and Oceanic Bank.", "He has applied his skills in management into construction and he is vast in procurement, proffering technical solutions to construction challenges."] }
+  ],
+  "services": [
+    {
+      "id": "design-build",
+      "title": "Design & Build",
+      "shortDescription": "From client brief to construction—conceptual design, drawings, documentation, construction, and full contract management.",
+      "icon": "architecture",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCQYb1DDCtq-uN1zXxV9qevL4Fxu9bsBjgpCiDDRrs_45yPf18w9CfPY9LWsDnWG_wmujh94C6TeDvGJSLqQl4xu1_o4mmD4EtiIpjMuKlcJcM4oZlLeiCf_z9KO90Koz2dqVrusw4WEyTQN9EQQik3ZSw_8kFxBpzXAPtC7pdjB2OQjanmipcAYsnu88u_k59jsEtDDlbh8Zr_6gYI0IerE6fOvNhAdV4Ca6aGKb7zrSGlYAuHSPAg8RckFWEC923_uidWALrjm80",
+      "alt": "Design and build—conceptual design to construction",
+      "items": [
+        "Defining clients brief",
+        "Conceptual design",
+        "Presentation drawings",
+        "Construction drawings & documentation",
+        "Construction proper",
+        "Construction management",
+        "Procurement management",
+        "Contract management"
+      ]
+    },
+    {
+      "id": "project-management",
+      "title": "Project Management",
+      "shortDescription": "Facilitation of project delivery, construction and remodeling works, process overhaul, cost and contract management, planning and scheduling.",
+      "icon": "assignment",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY",
+      "alt": "Project management and delivery",
+      "items": [
+        "Facilitation of project delivery",
+        "Management of construction/remodeling works",
+        "Management of process overhaul",
+        "Construction project management",
+        "Cost and contract management",
+        "Planning and scheduling support"
+      ]
+    },
+    {
+      "id": "consulting",
+      "title": "Consulting",
+      "shortDescription": "Architectural consultancy, planning and scheduling of complex projects, monitoring and control systems, risk analysis and tool evaluation.",
+      "icon": "support_agent",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs",
+      "alt": "Consulting and advisory services",
+      "items": [
+        "Architectural consultancy services",
+        "Planning and scheduling of complex projects",
+        "Design of project monitoring and control systems",
+        "Enterprise-wide project management implementation",
+        "Project risks analysis and quantification",
+        "Selection/Evaluation of project management tools"
+      ]
+    }
+  ],
+  "profile": {
+    "foundedYear": 2003,
+    "coreServicesSummary": "Design and build, space remodeling, project and construction management.",
+    "coreServices": ["Design and build", "Space remodeling", "Project management", "Construction management"],
+    "approachSummary": "We adopt a systems approach to design and build—our core offering—whereby all projects are broken down into design resolutions, planning and construction phases. We ensure maximum economy in cost, time and quality, and give maximum value to the client.",
+    "philosophy": "Consistently with our philosophy of giving maximum value to the client, we have continually ensured that all our procedures in both design and project management are fully computerized.",
+    "milestones": [
+      { "year": "2003", "title": "Foundation", "description": "Space Development Consulting Limited was formed to render services in design and build, space remodeling, project and construction management.", "icon": "lightbulb" },
+      { "year": "2005", "title": "CAC Registration", "description": "Registered with the Corporate Affairs Commission (February 2005).", "icon": "verified" },
+      { "year": "2006", "title": "Incorporation", "description": "Company incorporated (April 2006).", "icon": "storefront" },
+      { "year": "Present", "title": "Today", "description": "Fully computerized procedures and integrated project delivery; our competitive edge shines through in every final product.", "icon": "rocket_launch" }
+    ],
+    "competitiveEdge": [
+      { "icon": "groups", "title": "Diversity & Integrity", "description": "The diversity in knowledge, skills and experience of our key staff, coupled with competence, character and integrity, shines through in the final product every time." },
+      { "icon": "speed", "title": "Decisive & Responsive", "description": "Decisiveness, responsiveness and flexibility in service delivery." },
+      { "icon": "military_tech", "title": "Committed Teams", "description": "A holistic evaluation, motivation and reward system ensures our staff are not only committed but synergistic in the discharge of their assignments." }
+    ],
+    "howWeWork": [
+      { "step": "01", "title": "Define scope", "description": "Project scope is defined from a careful identification of objectives in terms of time, budget and technical requirements." },
+      { "step": "02", "title": "Plan", "description": "Detailed planning in terms of cost, time and quality is undertaken to give life to the project. Change management criteria is clarified with the client before implementation." },
+      { "step": "03", "title": "Execute", "description": "After a satisfactory action plan is determined, we proceed to execution—with feedback to planning as the project evolves. Progress on time, quality, expenditure and scope is reported to key stakeholders periodically." }
+    ]
+  },
+  "about": {
+    "mission": "We deliver world-class construction and development solutions—from landmark commercial buildings to sustainable residential communities—transforming visions into reality across Nigeria and beyond.",
+    "whoWeAre": "Space Development Consulting Limited is a premier construction and development consulting firm headquartered in Lagos. We were formed in 2003 to deliver design and build, space remodeling, and project and construction management.",
+    "whyChooseUs": [
+      { "icon": "schedule", "title": "23+ Years", "description": "Since 2003—structural excellence and trusted delivery across the nation." },
+      { "icon": "apartment", "title": "115+ Projects", "description": "Iconic landmarks delivered on time and beyond scope." },
+      { "icon": "eco", "title": "Sustainability First", "description": "LEED, BREEAM and net-zero construction at the core." },
+      { "icon": "engineering", "title": "Systems Approach", "description": "Design, planning and construction. Maximizing cost, time and quality." },
+      { "icon": "computer", "title": "Fully Computerized", "description": "Design and project management procedures are fully computerized." }
+    ],
+    "values": [
+      { "name": "Integrity", "description": "Competence, character and integrity on every project—we build trust through transparency and ethical practice." },
+      { "name": "Decisiveness", "description": "Decisiveness, responsiveness and flexibility in service so we deliver when it matters." },
+      { "name": "Excellence", "description": "We set the gold standard in quality, delivery and client partnership; maximum value to the client." },
+      { "name": "Synergy", "description": "Holistic evaluation, motivation and reward—our staff are committed and synergistic in every assignment." }
+    ],
+    "stats": [
+      { "label": "Experience", "value": "23+", "description": "Years of structural excellence since 2003 across the nation." },
+      { "label": "Completed", "value": "115+", "description": "Iconic landmarks delivered on time and beyond scope." },
+      { "label": "Awards", "value": "16", "description": "National awards for sustainability and design." }
+    ],
+    "timeline": [
+      { "year": "2003", "title": "Foundation", "description": "Space Development Consulting Limited was formed to render services in design and build, space remodeling, project and construction management.", "icon": "lightbulb" },
+      { "year": "2005", "title": "CAC Registration", "description": "Registered with the Corporate Affairs Commission (February 2005).", "icon": "verified" },
+      { "year": "2006", "title": "Incorporation", "description": "Company incorporated (April 2006).", "icon": "storefront" },
+      { "year": "Present", "title": "Today", "description": "Fully computerized procedures and integrated project delivery; our competitive edge shines through in every final product.", "icon": "rocket_launch" }
+    ],
+    "certifications": [
+      { "name": "LEED" },
+      { "name": "BREEAM" },
+      { "name": "COREN" },
+      { "name": "NIA" }
+    ],
+    "offices": [
+      { "name": "Headquarters", "description": "18 Rafiu Shittu Street, Alaka Estate, Surulere, Lagos.", "href": "contact.html" }
+    ]
+  },
+  "clients": [
+    { "src": "assets/clients/access_logo_transparent.png", "alt": "Access Bank" },
+    { "src": "assets/clients/alml_logo.png", "alt": "ALML" },
+    { "src": "assets/clients/apm_terminals_transparent.png", "alt": "APM Terminals" },
+    { "src": "assets/clients/Ecobank_Logo.png", "alt": "Ecobank" },
+    { "src": "assets/clients/GTBank_logo.svg", "alt": "GTBank" },
+    { "src": "assets/clients/ikoyi_club_logo.png", "alt": "Ikoyi Club" },
+    { "src": "assets/clients/mrs_logo_transparent.png", "alt": "MRS" },
+    { "src": "assets/clients/oceanic_transparent_bg.png", "alt": "Oceanic" },
+    { "src": "assets/clients/Sterling_Bank_Logo_Straight.png", "alt": "Sterling Bank" },
+    { "src": "assets/clients/virgin_atlantic.png", "alt": "Virgin Atlantic" },
+    { "src": "assets/clients/wema-bank-seeklogo.png", "alt": "Wema Bank" }
+  ]
+}

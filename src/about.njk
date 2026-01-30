@@ -1,0 +1,281 @@
+---
+layout: layouts/base.njk
+title: About Us
+permalink: /about.html
+---
+
+<!-- Hero + Mission -->
+<section class="relative pt-24 pb-20 px-6 lg:px-20 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-3xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Who We Are</span>
+<h1 class="text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tighter mb-8">
+Building the <span class="text-primary">Modern Skyline</span>
+</h1>
+<p class="text-gray-300 text-lg md:text-xl font-medium leading-relaxed mb-6">{{ site.about.whoWeAre }}</p>
+<p class="text-gray-400 text-base md:text-lg leading-relaxed mb-6">{{ site.profile.approachSummary }}</p>
+<p class="text-gray-400 text-base md:text-lg leading-relaxed">{{ site.about.mission }}</p>
+</div>
+</div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-20 lg:py-28 px-6 lg:px-20 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-4">Why SPACEDEV</h2>
+<h3 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">Why Choose Us</h3>
+<div class="h-1.5 w-24 bg-primary mx-auto mt-6 mb-8 rounded-full"></div>
+<p class="text-gray-400 max-w-2xl mx-auto text-lg">{{ site.profile.coreServicesSummary }} We combine experience, sustainability and full-service delivery to set the standard.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+{% for item in site.about.whyChooseUs %}
+<div class="bg-white/5 border border-white/10 p-8 rounded-xl hover:border-primary/50 transition-all group">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">{{ item.icon }}</span>
+</div>
+<h4 class="text-white text-xl font-extrabold tracking-tight mb-2">{{ item.title }}</h4>
+<p class="text-gray-400 text-sm font-medium leading-relaxed">{{ item.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<!-- Our Journey -->
+<section class="py-20 lg:py-28 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
+<div class="lg:w-1/2">
+<div class="text-center lg:text-left mb-12">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Our Journey</span>
+<h2 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">Milestones That Shaped Us</h2>
+<div class="h-1.5 w-24 bg-primary mt-6 mb-8 lg:mx-0 mx-auto rounded-full"></div>
+<p class="text-gray-400 text-lg leading-relaxed">From our foundation in {{ site.profile.foundedYear }} to a leader in design and build, project and construction management today.</p>
+</div>
+<div class="grid grid-cols-[48px_1fr] gap-x-6">
+{% for step in site.about.timeline %}
+<div class="flex flex-col items-center gap-1 {% if not loop.first %}pt-0{% else %}pt-3{% endif %}">
+{% if not loop.first %}<div class="w-[2px] timeline-line about-timeline h-6"></div>{% endif %}
+<div class="text-primary size-10 flex items-center justify-center bg-primary/10 rounded-full border border-primary/20">
+<span class="material-symbols-outlined !text-xl">{{ step.icon }}</span>
+</div>
+{% if not loop.last %}<div class="w-[2px] timeline-line about-timeline h-16 grow"></div>{% endif %}
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-white text-xl font-extrabold leading-normal">{{ step.title }} ({{ step.year }})</p>
+<p class="text-gray-400 text-base font-normal leading-relaxed mt-1">{{ step.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+<div class="lg:w-1/2 min-h-[400px] lg:min-h-[500px] rounded-2xl overflow-hidden bg-cover bg-center flex-shrink-0" style="background-image: linear-gradient(to right, rgba(10,10,10,0.4), transparent 40%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9W3quNiLn78WdL_lwDqmIUp8KGmQkvMXiaYkJAs-h0uTz14Q0N-G70RKow3MiqKuAM9RqS7oAVc3wKLC0wwcD1ASXB47lHOLQuJBGnH9hffoFND6N5BfXzC7YPwpDpurSam6aVmDi5NHBrv8Pw97j-E1i4M6kEI6xawQbofT1vYrY8_cEvAt2-D_ltvDCf_2Oh1z1eU-ZggSx6I6pyD9pf3jVxiYwYqaqFKgZ01vPc8awA4E8ux2DgtTem8Zjy7wrylSyvYGpTrM');">
+<div class="h-full w-full flex items-end p-8">
+<div class="bg-background-dark/60 backdrop-blur-xl p-8 rounded-xl border border-white/5 max-w-sm">
+<p class="text-primary font-bold text-xs mb-2 uppercase tracking-widest">Global HQ</p>
+<p class="text-white text-sm leading-relaxed font-medium">Our headquarters in the Innovation District, a living example of our net-zero construction philosophy.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How We Work -->
+<section class="py-20 lg:py-28 px-6 lg:px-20 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-4">Our Process</h2>
+<h3 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">How We Work</h3>
+<div class="h-1.5 w-24 bg-primary mx-auto mt-6 mb-8 rounded-full"></div>
+<p class="text-gray-400 max-w-2xl mx-auto text-lg">We adopt an integrated approach to project delivery—scope, planning, change management and execution—with progress reported to key stakeholders periodically.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+{% for step in site.profile.howWeWork %}
+<div class="bg-white/5 border border-white/10 p-8 rounded-xl hover:border-primary/50 transition-all">
+<div class="text-primary font-black text-2xl mb-4">{{ step.step }}</div>
+<h4 class="text-white text-xl font-extrabold tracking-tight mb-2">{{ step.title }}</h4>
+<p class="text-gray-400 text-sm font-medium leading-relaxed">{{ step.description }}</p>
+</div>
+{% endfor %}
+</div>
+<p class="text-gray-500 text-sm mt-8 text-center max-w-2xl mx-auto">{{ site.profile.philosophy }}</p>
+</div>
+</section>
+
+<!-- By the Numbers -->
+<section class="py-20 lg:py-28 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+{% for stat in site.about.stats %}
+<div class="bg-white/5 border border-white/10 p-10 rounded-xl group hover:border-primary/50 transition-all">
+<h3 class="text-accent-sub text-sm font-bold uppercase tracking-widest mb-4">{{ stat.label }}</h3>
+<p class="text-5xl font-black text-white mb-2 {% if loop.index == 2 %}text-primary{% endif %}">{{ stat.value }}</p>
+<p class="text-gray-400 font-medium">{{ stat.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<!-- Our Values -->
+<section class="py-20 lg:py-28 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-4">Our Culture</h2>
+<h3 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">Our Values</h3>
+<div class="h-1.5 w-24 bg-primary mx-auto mt-6 mb-8 rounded-full"></div>
+<p class="text-gray-400 max-w-2xl mx-auto text-lg">The principles that guide every project and every partnership.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+{% for value in site.about.values %}
+<div class="border-l-4 border-primary pl-8 py-4">
+<h4 class="text-white text-xl font-extrabold tracking-tight mb-2">{{ value.name }}</h4>
+<p class="text-gray-400 text-sm font-medium leading-relaxed">{{ value.description }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<!-- Meet the Leadership -->
+<section class="py-20 lg:py-28 px-4 md:px-10 lg:px-20 bg-white/[0.02]">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight mb-6">Meet the Team</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto mb-8 rounded-full"></div>
+<p class="text-gray-400 max-w-2xl mx-auto text-lg font-medium">Our team of visionaries and engineers are dedicated to redefining the standards of the construction industry.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
+{% for member in site.team %}
+<div class="group flex flex-col items-center team-card-wrapper cursor-pointer" data-member-index="{{ loop.index0 }}" role="button" tabindex="0" aria-label="View {{ member.name }} profile">
+<div class="team-card relative size-72 overflow-hidden rounded-full border-4 border-transparent group-hover:border-primary transition-all duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+<img class="h-full w-full object-cover transition-all duration-700 scale-105 group-hover:scale-110" src="{{ member.image }}" alt="{{ member.name }}"/>
+<div class="bio-reveal absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-black/40 backdrop-blur-sm">
+<p class="text-white text-sm font-medium leading-relaxed">{{ member.shortBio }}</p>
+</div>
+</div>
+<div class="mt-8 text-center">
+<h3 class="text-white text-2xl font-black tracking-tight">{{ member.name }}</h3>
+<p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">{{ member.role }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<!-- Team member modal -->
+<div id="team-modal" class="team-modal fixed inset-0 z-50 hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="team-modal-title">
+<div class="team-modal-backdrop absolute inset-0 bg-black/70 backdrop-blur-sm" data-close-modal></div>
+<div class="team-modal-box relative z-10 w-full mx-4 max-h-[90vh] overflow-y-auto bg-background-dark border border-white/10 rounded-2xl shadow-2xl flex flex-col md:flex-row">
+<button type="button" class="team-modal-close absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Close modal" data-close-modal>
+<span class="material-symbols-outlined">close</span>
+</button>
+{% for member in site.team %}
+<div class="team-modal-panel hidden w-full p-8 md:p-10 lg:p-12 flex flex-col md:flex-row gap-8 md:gap-10" data-member-index="{{ loop.index0 }}">
+<div class="md:min-w-[260px] lg:min-w-[300px] flex-shrink-0 mb-2 md:mb-0">
+<img class="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl object-cover mx-auto md:mx-0" src="{{ member.image }}" alt="{{ member.name }}"/>
+</div>
+<div class="team-modal-body flex-1 min-w-0">
+<h2 id="team-modal-title" class="text-white text-2xl md:text-3xl font-black tracking-tight mb-1">{{ member.name }}</h2>
+<p class="text-primary font-bold text-sm uppercase tracking-widest mb-6">{{ member.role }}</p>
+{% if member.qualifications %}
+<h3 class="team-modal-heading text-white text-xs font-bold uppercase tracking-widest mb-3">Professional qualifications</h3>
+<ul class="team-modal-list text-gray-400 text-sm leading-relaxed mb-8">
+{% for q in member.qualifications %}
+<li>{{ q }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if member.profile %}
+<div class="team-modal-profile">
+{% for para in member.profile %}
+<p>{{ para }}</p>
+{% endfor %}
+</div>
+{% else %}
+<div class="team-modal-profile">{{ member.fullProfile }}</div>
+{% endif %}
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+
+<script>
+(function() {
+    var modal = document.getElementById('team-modal');
+    if (!modal) return;
+    var panels = modal.querySelectorAll('.team-modal-panel');
+    var backdrops = modal.querySelectorAll('[data-close-modal]');
+    function openModal(index) {
+        panels.forEach(function(p, i) { p.classList.toggle('hidden', i !== index); });
+        modal.classList.remove('hidden');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        modal.classList.add('hidden');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.team-card-wrapper').forEach(function(wrapper) {
+        var index = parseInt(wrapper.getAttribute('data-member-index'), 10);
+        wrapper.addEventListener('click', function() { openModal(index); });
+        wrapper.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(index); }
+        });
+    });
+    backdrops.forEach(function(el) { el.addEventListener('click', closeModal); });
+    modal.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+})();
+</script>
+
+<!-- Certifications & Memberships -->
+<section class="py-20 lg:py-28 px-6 lg:px-20">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-4">Standards We Uphold</h2>
+<h3 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight mb-6">Certifications & Memberships</h3>
+<div class="h-1.5 w-24 bg-primary mx-auto mb-12 rounded-full"></div>
+<div class="flex flex-wrap justify-center gap-8 items-center">
+{% for cert in site.about.certifications %}
+<span class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-gray-300 font-bold text-lg uppercase tracking-wider">{{ cert.name }}</span>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<!-- Where We Work -->
+<section class="py-20 lg:py-28 px-6 lg:px-20 bg-white/[0.02]">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-accent-sub text-xs font-black uppercase tracking-[0.3em] mb-4">Get in Touch</h2>
+<h3 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">Where We Work</h3>
+<div class="h-1.5 w-24 bg-primary mx-auto mt-6 mb-8 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+{% for office in site.about.offices %}
+<a href="{{ office.href }}" class="block p-8 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all group">
+<p class="text-primary font-bold text-sm uppercase tracking-widest mb-2">{{ office.name }}</p>
+<p class="text-gray-400 text-sm leading-relaxed">{{ office.description }}</p>
+<span class="inline-flex items-center gap-2 mt-4 text-primary font-bold text-sm group-hover:gap-3 transition-all">Contact us <span class="material-symbols-outlined text-lg">arrow_forward</span></span>
+</a>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 px-4 md:px-10 lg:px-20">
+<div class="cta-box max-w-5xl mx-auto bg-primary rounded-2xl p-10 md:p-20 flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl relative overflow-hidden">
+<div class="text-center md:text-left">
+<h2 class="text-background-dark text-4xl font-black tracking-tighter mb-3 leading-none">Ready to Build <br class="hidden md:block"/>the Future?</h2>
+<p class="text-background-dark/70 font-bold text-lg">Let's discuss your next landmark project.</p>
+</div>
+<button type="button" class="open-quote-modal flex min-w-[240px] cursor-pointer items-center justify-center rounded-xl h-16 px-10 bg-background-dark text-primary text-sm font-black uppercase tracking-[0.2em] hover:shadow-xl hover:-translate-y-1 transition-all border-0">
+Get a Quote
+</button>
+</div>
+</section>

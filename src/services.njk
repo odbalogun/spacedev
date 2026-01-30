@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+title: Services
+permalink: /services.html
+---
+
+<section class="pt-24 pb-16 px-6">
+<div class="max-w-6xl mx-auto text-center">
+<p class="text-primary text-xs font-bold tracking-[0.25em] uppercase mb-4">Our Expertise</p>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-[1.1] tracking-tight mb-6">
+  Construction & development consulting for every scale.
+</h1>
+<p class="text-gray-400 text-lg max-w-2xl mx-auto">
+  Our core offering: {{ site.profile.coreServicesSummary }} From commercial towers to residential communities and industrial facilities—full design, engineering, and delivery support.
+</p>
+</div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 pb-20 space-y-12 md:space-y-16">
+{% for service in site.services %}
+<article id="{{ service.id }}" class="service-block group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] hover:border-primary/40 transition-all duration-300 scroll-mt-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[320px] md:min-h-[380px]">
+{% if not (loop.index is divisibleby(2)) %}
+<div class="service-block__image-wrap relative overflow-hidden order-2 lg:order-1">
+<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="{{ service.image }}" alt="{{ service.alt }}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<div class="service-block__content flex flex-col justify-center p-8 md:p-10 order-1 lg:order-2">
+{% else %}
+<div class="service-block__content flex flex-col justify-center p-8 md:p-10 lg:order-1">
+{% endif %}
+<div class="service-block__icon-wrap w-16 h-16 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300 group-hover:scale-110">
+<span class="material-symbols-outlined text-4xl">{{ service.icon }}</span>
+</div>
+<h2 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">{{ service.title }}</h2>
+<p class="text-gray-400 leading-relaxed mb-6 max-w-lg">{{ service.shortDescription }}</p>
+<ul class="space-y-2 mb-6">
+{% for item in service.items %}
+<li class="text-gray-400 text-sm flex items-start gap-2"><span class="text-primary mt-1.5 shrink-0">•</span><span>{{ item }}</span></li>
+{% endfor %}
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all w-fit" href="contact.html">Get a quote <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+{% if loop.index is divisibleby(2) %}
+<div class="service-block__image-wrap relative overflow-hidden lg:order-2">
+<img class="service-block__image w-full h-full object-cover min-h-[240px] md:min-h-[380px] transition-transform duration-500 group-hover:scale-105" src="{{ service.image }}" alt="{{ service.alt }}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+</div>
+{% endif %}
+</div>
+</article>
+{% endfor %}
+</section>
+
+<section class="border-t border-white/10 py-16 px-6">
+<div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+<p class="text-white text-xl font-bold">Ready to start a project?</p>
+<a class="inline-flex items-center gap-2 bg-primary text-background-dark font-bold px-6 py-3 rounded-lg hover:bg-primary/90 hover:scale-[1.02] transition-all w-fit text-sm" href="contact.html">Contact us <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+</div>
+</section>
