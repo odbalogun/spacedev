@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Space Development Consulting Limited—design and build, space remodeling, project and construction management. Premier consulting firm delivering excellence across Nigeria.">
+<meta name="keywords" content="construction, development, consulting, building, infrastructure, Nigeria, Lagos, SpaceDev, Space Development Consulting Limited, Tosin Sunmonu">
+<title>Projects | Space Development Consulting Limited</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c3d402",
+                        "accent-sub": "#7E9C38",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;%3E%3Crect fill=&#39;%23C4D602&#39; width=&#39;100&#39; height=&#39;100&#39; rx=&#39;10&#39;/%3E%3Ctext x=&#39;50&#39; y=&#39;65&#39; font-size=&#39;50&#39; font-weight=&#39;bold&#39; text-anchor=&#39;middle&#39; fill=&#39;%231A1A1A&#39;%3ESD%3C/text%3E%3C/svg%3E">
+
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden">
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 text-primary">
+<img src="assets/logo_clean_1.png" alt="SPACEDEV" class="h-8 w-auto"/>
+<h1 class="text-xl font-black tracking-tighter text-white">SPACEDEV</h1>
+</a>
+<nav class="hidden md:flex items-center gap-10">
+
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="services.html">Services</a>
+
+<a class="text-sm font-semibold hover:text-primary transition-colors text-primary font-extrabold" href="projects.html">Projects</a>
+
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About Us</a>
+
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact Us</a>
+
+</nav>
+<button type="button" id="request-quote-btn" class="bg-primary hover:bg-opacity-90 text-background-dark px-5 py-2.5 rounded font-bold text-sm tracking-wide transition-all uppercase" aria-label="Open request quote form">
+                Request Quote
+            </button>
+</div>
+</header>
+
+<main class="pt-0">
+
+<section class="relative w-full pt-24 pb-12 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8 mb-16">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight mb-6 uppercase text-white">
+                    Our Legacy In <br/>
+<span class="text-primary">Steel and Stone</span>
+</h1>
+<p class="text-lg text-gray-400 max-w-lg">
+                    Showcasing excellence in Residential, Commercial, and Industrial construction. Each project is a testament to our commitment to durability and modern design.
+                </p>
+</div>
+<div class="flex gap-4 mb-4">
+<div class="flex flex-col items-end">
+<span class="text-4xl font-black text-primary">115+</span>
+<span class="text-[10px] uppercase tracking-[0.2em] font-extrabold opacity-60 text-gray-400">Projects Delivered</span>
+</div>
+<div class="w-px h-12 bg-white/10 mx-2"></div>
+<div class="flex flex-col items-end">
+<span class="text-4xl font-black text-primary">61</span>
+<span class="text-[10px] uppercase tracking-[0.2em] font-extrabold opacity-60 text-gray-400">Clients Served</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 py-6 border-y border-white/5 mb-12" id="projects-filters">
+<button class="project-filter-btn px-6 py-2 rounded-full bg-primary text-background-dark font-bold text-sm" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+<button class="project-filter-btn px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors text-sm font-medium text-white" type="button" data-filter="residential" aria-pressed="false">Residential</button>
+<button class="project-filter-btn px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors text-sm font-medium text-white" type="button" data-filter="commercial" aria-pressed="false">Commercial</button>
+<button class="project-filter-btn px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors text-sm font-medium text-white" type="button" data-filter="industrial" aria-pressed="false">Industrial</button>
+</div>
+<div class="masonry-grid" id="projects-grid">
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="commercial" data-title="Azure Heights Tower" data-location="Chicago, IL" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY" data-image-alt="Modern glass office skyscraper" data-description="A landmark 42-story commercial tower featuring a high-performance glass façade, LEED Platinum certification, and flexible floor plates for corporate and retail tenants." data-overview="Azure Heights Tower is a landmark 42-story commercial development in the heart of Chicago. The project features a high-performance glass façade, LEED Platinum certification, and flexible floor plates designed for corporate and retail tenants. Our team delivered full structural, MEP, and façade engineering from concept through completion." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY|https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs|https://lh3.googleusercontent.com/aida-public/AB6AXuCelIspauw4zLWKbtXLASYUeZNCPBL_dLWG2e-jN5nCTc7UrJ5VzFR3Qf3fAjAcLGLOG384ZTS0MweFOjm-ugNS_L3IHIEE2bz8wy5EVoctYDSgJZYXkUrx6C_rmGVIrI19yCN1m_KbCEhV96nhV71mMQVTeTFfSfhwSs-O3Vcze5nQEbP9eZMZOrkmBDaQy4kvYEQEMkLZ-IIkmNs9K1yC8WF6BhwBK_AD20N_NfVGkHfHOqiMSTgPdIT0bY2TROsiPE95lgIMP3E" data-stat-names="Floor area|Duration|Status" data-stat-values="85,000 sqm|36 months|Completed 2024">
+<img alt="Modern glass office skyscraper" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Commercial</span>
+<h3 class="text-2xl font-black text-white mb-4 uppercase">Azure Heights Tower</h3>
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-white/90">Chicago, IL</span>
+<span class="material-symbols-outlined text-white">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="residential" data-title="The Glass Pavilion" data-location="Miami, FL" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY" data-image-alt="Luxury modern residential villa" data-description="A waterfront residence with floor-to-ceiling glass, sustainable materials, and seamless indoor-outdoor living spaces." data-overview="The Glass Pavilion is a waterfront residence in Miami featuring floor-to-ceiling glass, sustainable materials, and seamless indoor-outdoor living. The design prioritizes natural light and views while achieving high energy performance. SPACEDEV managed construction and integration of custom glazing and structural systems." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY|https://lh3.googleusercontent.com/aida-public/AB6AXuD4FYYFmWxfDp2UDJ2b02QpRk6sPuJwjNWwUJEkegtVfPSaPIib65M7VOqCVYPoWnQjSillrzHqZjD7kOhoXoHKXJ-EKEHqSlcxOqxClTo5SzBusnnmDmL5rGP3u4spskSkJRmeGjug3bqOlhPob7zNuAiter0mqeFHw_RlBxM6LzX8RWOAZqKjtGPbg-MmM73GtwfLeOTCsvuvCujY26Geo5i8joAgZ7pLjI1wgWX0KFjcXDIIMBo9cj35gicZ240yA9oX1nlgAT8|https://lh3.googleusercontent.com/aida-public/AB6AXuBasgEIDUWdOgArj20dDVAl0C_dBKKCoSaQ6l6p_b3Dz8zGEPhcaILXGW3_Nd0yneknpa5BC-XwVOdhK5Zf3Nr2tO8AGkpvAc9fYsocGy4YsAGsQx5nT-FxlxxI8FFdKox-d0JZNYt3Ytbpfz1kBWqEOEnL-UJVW1yN5S4Zem2XesUi17KyvJ3ExJ28ijZ35JW_VJMcxfEAu1tlRH08haicU65QF2bkqkV0gKY2FBz-dLodqAWkWTWDEUXbynjQOOc9iPVahEzB9jY" data-stat-names="Plot size|Build time|Units" data-stat-values="1,200 sqm|18 months|Single residence">
+<img alt="Luxury modern residential villa" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Residential</span>
+<h3 class="text-xl font-black text-white mb-2 uppercase">The Glass Pavilion</h3>
+<span class="text-sm text-white/90">Miami, FL</span>
+</div>
+</div>
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="industrial" data-title="Apex Logistics Hub" data-location="Detroit, MI" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCelIspauw4zLWKbtXLASYUeZNCPBL_dLWG2e-jN5nCTc7UrJ5VzFR3Qf3fAjAcLGLOG384ZTS0MweFOjm-ugNS_L3IHIEE2bz8wy5EVoctYDSgJZYXkUrx6C_rmGVIrI19yCN1m_KbCEhV96nhV71mMQVTeTFfSfhwSs-O3Vcze5nQEbP9eZMZOrkmBDaQy4kvYEQEMkLZ-IIkmNs9K1yC8WF6BhwBK_AD20N_NfVGkHfHOqiMSTgPdIT0bY2TROsiPE95lgIMP3E" data-image-alt="Large industrial manufacturing plant" data-description="A 500,000 sq ft distribution and logistics facility with advanced automation, rail access, and sustainable energy systems." data-overview="Apex Logistics Hub is a 500,000 sq ft distribution and logistics facility in Detroit with advanced automation, direct rail access, and on-site solar. The project included cold storage, cross-dock areas, and office space. We delivered full civil, structural, and MEP design plus construction oversight." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuCelIspauw4zLWKbtXLASYUeZNCPBL_dLWG2e-jN5nCTc7UrJ5VzFR3Qf3fAjAcLGLOG384ZTS0MweFOjm-ugNS_L3IHIEE2bz8wy5EVoctYDSgJZYXkUrx6C_rmGVIrI19yCN1m_KbCEhV96nhV71mMQVTeTFfSfhwSs-O3Vcze5nQEbP9eZMZOrkmBDaQy4kvYEQEMkLZ-IIkmNs9K1yC8WF6BhwBK_AD20N_NfVGkHfHOqiMSTgPdIT0bY2TROsiPE95lgIMP3E|https://lh3.googleusercontent.com/aida-public/AB6AXuCmdflRsFUNGy_SVOMxVsLeO118xR1grV3_36kGDAUAhyxZvO1wgIEYICS9G9OwgHTU11In5Anr4k3SEkKVKgczZYQNOGkdKEPt6leH4GzcDTzWt44XMgqZY9R1mnIyDaRNf5LKpqVsLfG0wwzjE0rUunbn_agWJ2I1S_N8NEESwxfd-pR5CnYhE_AWJ5JypVuPb5vf9ntOPFZSI9W_GZWtylp96YeZQiPsp2nxK3_MjqHiAg5oImrIIebIa_DKnPSdNMUhQ9Y2iKM|https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY" data-stat-names="Floor area|Duration|Status" data-stat-values="500,000 sq ft|28 months|Operational">
+<img alt="Large industrial manufacturing plant" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCelIspauw4zLWKbtXLASYUeZNCPBL_dLWG2e-jN5nCTc7UrJ5VzFR3Qf3fAjAcLGLOG384ZTS0MweFOjm-ugNS_L3IHIEE2bz8wy5EVoctYDSgJZYXkUrx6C_rmGVIrI19yCN1m_KbCEhV96nhV71mMQVTeTFfSfhwSs-O3Vcze5nQEbP9eZMZOrkmBDaQy4kvYEQEMkLZ-IIkmNs9K1yC8WF6BhwBK_AD20N_NfVGkHfHOqiMSTgPdIT0bY2TROsiPE95lgIMP3E"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Industrial</span>
+<h3 class="text-2xl font-black text-white mb-4 uppercase">Apex Logistics Hub</h3>
+<span class="text-sm text-white/90">Detroit, MI</span>
+</div>
+</div>
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="commercial" data-title="Centurion Plaza" data-location="London, UK" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs" data-image-alt="Abstract building architecture" data-description="Mixed-use development combining premium office space, retail, and public plazas in a landmark city-center location." data-overview="Centurion Plaza is a mixed-use development in central London combining premium office space, retail, and public plazas. The scheme achieved BREEAM Outstanding and includes below-grade parking and resilient façade systems. Our role covered structural and civil design plus construction support." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs|https://lh3.googleusercontent.com/aida-public/AB6AXuDYO63aDmZmgBZIcpIoMXvN3bamQXQxeEVr89vqUrgA1FjGqeSoY2grObiFw1AOiDi_82v4fRS_DsZAjwSNlv9SM-3L7Ivu8YFQv0SfepycZqi7WA9tCKeXbGT_KAKYbUpZS9vNoxWxEO_nQyVANSOTtUR2oNPx4L1LpmQ0GcfFqNEg6X29rIVIZDBLH0N9f32a7Qqhi3YFOceWiWO5xNKiolRIJT4FtD_KnrAWUW1g_xBdTktDWUgl25MfITJee3_3qOENH89u3hY|https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY" data-stat-names="GLA|Floors|Certification" data-stat-values="32,000 sqm|24|BREEAM Outstanding">
+<img alt="Abstract building architecture" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Commercial</span>
+<h3 class="text-2xl font-black text-white mb-4 uppercase">Centurion Plaza</h3>
+<span class="text-sm text-white/90">London, UK</span>
+</div>
+</div>
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="residential" data-title="Riverside Suites" data-location="Portland, OR" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuBasgEIDUWdOgArj20dDVAl0C_dBKKCoSaQ6l6p_b3Dz8zGEPhcaILXGW3_Nd0yneknpa5BC-XwVOdhK5Zf3Nr2tO8AGkpvAc9fYsocGy4YsAGsQx5nT-FxlxxI8FFdKox-d0JZNYt3Ytbpfz1kBWqEOEnL-UJVW1yN5S4Zem2XesUi17KyvJ3ExJ28ijZ35JW_VJMcxfEAu1tlRH08haicU65QF2bkqkV0gKY2FBz-dLodqAWkWTWDEUXbynjQOOc9iPVahEzB9jY" data-image-alt="Modern apartment building" data-description="Mid-rise residential building with 120 units, ground-floor retail, and green roofs integrated into the urban waterfront." data-overview="Riverside Suites is a mid-rise residential building on the Portland waterfront with 120 units, ground-floor retail, and green roofs. The project emphasizes durability and flood resilience. SPACEDEV provided structural and envelope design and construction administration." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuBasgEIDUWdOgArj20dDVAl0C_dBKKCoSaQ6l6p_b3Dz8zGEPhcaILXGW3_Nd0yneknpa5BC-XwVOdhK5Zf3Nr2tO8AGkpvAc9fYsocGy4YsAGsQx5nT-FxlxxI8FFdKox-d0JZNYt3Ytbpfz1kBWqEOEnL-UJVW1yN5S4Zem2XesUi17KyvJ3ExJ28ijZ35JW_VJMcxfEAu1tlRH08haicU65QF2bkqkV0gKY2FBz-dLodqAWkWTWDEUXbynjQOOc9iPVahEzB9jY|https://lh3.googleusercontent.com/aida-public/AB6AXuD4FYYFmWxfDp2UDJ2b02QpRk6sPuJwjNWwUJEkegtVfPSaPIib65M7VOqCVYPoWnQjSillrzHqZjD7kOhoXoHKXJ-EKEHqSlcxOqxClTo5SzBusnnmDmL5rGP3u4spskSkJRmeGjug3bqOlhPob7zNuAiter0mqeFHw_RlBxM6LzX8RWOAZqKjtGPbg-MmM73GtwfLeOTCsvuvCujY26Geo5i8joAgZ7pLjI1wgWX0KFjcXDIIMBo9cj35gicZ240yA9oX1nlgAT8|https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY" data-stat-names="Units|Floors|Completion" data-stat-values="120|12|2023">
+<img alt="Modern apartment building" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBasgEIDUWdOgArj20dDVAl0C_dBKKCoSaQ6l6p_b3Dz8zGEPhcaILXGW3_Nd0yneknpa5BC-XwVOdhK5Zf3Nr2tO8AGkpvAc9fYsocGy4YsAGsQx5nT-FxlxxI8FFdKox-d0JZNYt3Ytbpfz1kBWqEOEnL-UJVW1yN5S4Zem2XesUi17KyvJ3ExJ28ijZ35JW_VJMcxfEAu1tlRH08haicU65QF2bkqkV0gKY2FBz-dLodqAWkWTWDEUXbynjQOOc9iPVahEzB9jY"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Residential</span>
+<h3 class="text-xl font-black text-white mb-2 uppercase">Riverside Suites</h3>
+<span class="text-sm text-white/90">Portland, OR</span>
+</div>
+</div>
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="residential" data-title="The Oasis Estate" data-location="Beverly Hills, CA" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FYYFmWxfDp2UDJ2b02QpRk6sPuJwjNWwUJEkegtVfPSaPIib65M7VOqCVYPoWnQjSillrzHqZjD7kOhoXoHKXJ-EKEHqSlcxOqxClTo5SzBusnnmDmL5rGP3u4spskSkJRmeGjug3bqOlhPob7zNuAiter0mqeFHw_RlBxM6LzX8RWOAZqKjtGPbg-MmM73GtwfLeOTCsvuvCujY26Geo5i8joAgZ7pLjI1wgWX0KFjcXDIIMBo9cj35gicZ240yA9oX1nlgAT8" data-image-alt="Luxury estate mansion" data-description="Ultra-luxury estate with contemporary architecture, infinity pools, and extensive landscaping on a private hillside." data-overview="The Oasis Estate is an ultra-luxury hillside residence in Beverly Hills with contemporary architecture, infinity pools, and extensive landscaping. The build included complex foundations and custom structural steel. We led structural and civil design and site supervision through completion." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FYYFmWxfDp2UDJ2b02QpRk6sPuJwjNWwUJEkegtVfPSaPIib65M7VOqCVYPoWnQjSillrzHqZjD7kOhoXoHKXJ-EKEHqSlcxOqxClTo5SzBusnnmDmL5rGP3u4spskSkJRmeGjug3bqOlhPob7zNuAiter0mqeFHw_RlBxM6LzX8RWOAZqKjtGPbg-MmM73GtwfLeOTCsvuvCujY26Geo5i8joAgZ7pLjI1wgWX0KFjcXDIIMBo9cj35gicZ240yA9oX1nlgAT8|https://lh3.googleusercontent.com/aida-public/AB6AXuDE7S-FeSAWCQVtD2G63tNkEbqzKsCR-arYI2sc7cPyGSdBfpFRNCZWtRYv0t_6IPAjcqoDef_nrZdOB2gr2mOUubP6NZtSWpGyyIbLXqwLoNxwL0IzbGVYvwpzUTsSPEKgiqMosE2RMU_OO7gLqkIH1fWad_hnq_7LXDm2-phtLHmEkH0pSTUV_CZ2QoTj96y-oi9w5izf9q8jIbvwJpGM6K7ej3mkcYCtF2xZhekb8DEmSk_XCFV_jwyGvDEhECKco0OlIlPk9vY|https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs" data-stat-names="Plot|Build time|Status" data-stat-values="2.5 acres|22 months|Completed">
+<img alt="Luxury estate mansion" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FYYFmWxfDp2UDJ2b02QpRk6sPuJwjNWwUJEkegtVfPSaPIib65M7VOqCVYPoWnQjSillrzHqZjD7kOhoXoHKXJ-EKEHqSlcxOqxClTo5SzBusnnmDmL5rGP3u4spskSkJRmeGjug3bqOlhPob7zNuAiter0mqeFHw_RlBxM6LzX8RWOAZqKjtGPbg-MmM73GtwfLeOTCsvuvCujY26Geo5i8joAgZ7pLjI1wgWX0KFjcXDIIMBo9cj35gicZ240yA9oX1nlgAT8"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Residential</span>
+<h3 class="text-2xl font-black text-white mb-4 uppercase">The Oasis Estate</h3>
+<span class="text-sm text-white/90">Beverly Hills, CA</span>
+</div>
+</div>
+<div class="masonry-item project-card project-card-trigger group relative overflow-hidden rounded-lg cursor-pointer" data-category="industrial" data-title="Global Transit Center" data-location="Singapore" data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCmdflRsFUNGy_SVOMxVsLeO118xR1grV3_36kGDAUAhyxZvO1wgIEYICS9G9OwgHTU11In5Anr4k3SEkKVKgczZYQNOGkdKEPt6leH4GzcDTzWt44XMgqZY9R1mnIyDaRNf5LKpqVsLfG0wwzjE0rUunbn_agWJ2I1S_N8NEESwxfd-pR5CnYhE_AWJ5JypVuPb5vf9ntOPFZSI9W_GZWtylp96YeZQiPsp2nxK3_MjqHiAg5oImrIIebIa_DKnPSdNMUhQ9Y2iKM" data-image-alt="Modern warehouse factory" data-description="Regional logistics and transit hub with cold storage, last-mile distribution, and solar-powered operations." data-overview="Global Transit Center is a regional logistics and transit hub in Singapore with cold storage, last-mile distribution, and solar-powered operations. The facility includes office space and loading docks. We delivered full civil, structural, and MEP design and site supervision." data-images="https://lh3.googleusercontent.com/aida-public/AB6AXuCmdflRsFUNGy_SVOMxVsLeO118xR1grV3_36kGDAUAhyxZvO1wgIEYICS9G9OwgHTU11In5Anr4k3SEkKVKgczZYQNOGkdKEPt6leH4GzcDTzWt44XMgqZY9R1mnIyDaRNf5LKpqVsLfG0wwzjE0rUunbn_agWJ2I1S_N8NEESwxfd-pR5CnYhE_AWJ5JypVuPb5vf9ntOPFZSI9W_GZWtylp96YeZQiPsp2nxK3_MjqHiAg5oImrIIebIa_DKnPSdNMUhQ9Y2iKM|https://lh3.googleusercontent.com/aida-public/AB6AXuCelIspauw4zLWKbtXLASYUeZNCPBL_dLWG2e-jN5nCTc7UrJ5VzFR3Qf3fAjAcLGLOG384ZTS0MweFOjm-ugNS_L3IHIEE2bz8wy5EVoctYDSgJZYXkUrx6C_rmGVIrI19yCN1m_KbCEhV96nhV71mMQVTeTFfSfhwSs-O3Vcze5nQEbP9eZMZOrkmBDaQy4kvYEQEMkLZ-IIkmNs9K1yC8WF6BhwBK_AD20N_NfVGkHfHOqiMSTgPdIT0bY2TROsiPE95lgIMP3E|https://lh3.googleusercontent.com/aida-public/AB6AXuBO3aDMOFs1LCbtxCx6-qm1fb7G15ufg8T-CcYRwcVZXLol5u1iTYWsRZo0IgfPlg7wb7kcNVZJfCv6Ets78KLZ2NpINFqJBN32rKzEoMW2zGSUifDVeud_mqCVtnzjTFc9UrS3B4VtqyjYhH4D3Cr8MBjqD3q8sfvvHMnqLmBSMo1tT34CiGX14EAWpvifXn6-gAmPtJuuFrm5oHkAPwdNQf8AMEl3CM7U0bx7B9MbjRUj7kX7URDzDs-la-1mNxd5q-avt64QiFs" data-stat-names="Floor area|Duration|Solar capacity" data-stat-values="28,000 sqm|20 months|1.2 MW">
+<img alt="Modern warehouse factory" class="w-full h-auto object-cover transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmdflRsFUNGy_SVOMxVsLeO118xR1grV3_36kGDAUAhyxZvO1wgIEYICS9G9OwgHTU11In5Anr4k3SEkKVKgczZYQNOGkdKEPt6leH4GzcDTzWt44XMgqZY9R1mnIyDaRNf5LKpqVsLfG0wwzjE0rUunbn_agWJ2I1S_N8NEESwxfd-pR5CnYhE_AWJ5JypVuPb5vf9ntOPFZSI9W_GZWtylp96YeZQiPsp2nxK3_MjqHiAg5oImrIIebIa_DKnPSdNMUhQ9Y2iKM"/>
+<div class="overlay absolute inset-0 bg-accent-sub opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-white/80 mb-2">Industrial</span>
+<h3 class="text-xl font-black text-white mb-2 uppercase">Global Transit Center</h3>
+<span class="text-sm text-white/90">Singapore</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+(function () {
+  var filtersEl = document.getElementById('projects-filters');
+  var gridEl = document.getElementById('projects-grid');
+  if (!filtersEl || !gridEl) return;
+  var buttons = filtersEl.querySelectorAll('.project-filter-btn');
+  var items = gridEl.querySelectorAll('.masonry-item');
+  function setActive(btn) {
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+      b.classList.remove('bg-primary', 'text-background-dark');
+      b.classList.add('bg-white/5', 'text-white');
+    });
+    btn.setAttribute('aria-pressed', 'true');
+    btn.classList.add('bg-primary', 'text-background-dark');
+    btn.classList.remove('bg-white/5', 'text-white');
+  }
+  function filterProjects(value) {
+    items.forEach(function (item) {
+      var cat = item.getAttribute('data-category');
+      var show = value === 'all' || cat === value;
+      if (show) {
+        item.classList.remove('projects-hidden--collapsed');
+        requestAnimationFrame(function () {
+          item.classList.remove('projects-hidden');
+        });
+      } else {
+        item.classList.add('projects-hidden');
+        item.addEventListener('transitionend', function onEnd() {
+          item.removeEventListener('transitionend', onEnd);
+          item.classList.add('projects-hidden--collapsed');
+        }, { once: true });
+      }
+    });
+  }
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var value = btn.getAttribute('data-filter');
+      setActive(btn);
+      filterProjects(value);
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="bg-background-dark border-t border-white/10 py-20">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-primary mb-6">
+<img src="assets/logo_clean_1.png" alt="SPACEDEV" class="h-8 w-auto"/>
+<h2 class="text-xl font-black tracking-tighter text-white">SPACEDEV</h2>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+                    Setting the gold standard in high-end construction and modern architecture.
+                </p>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Explore</h5>
+<ul class="space-y-4 text-gray-500 text-sm">
+
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="projects.html">Projects</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact Us</a></li>
+
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Company</h5>
+<ul class="space-y-4 text-gray-500 text-sm">
+
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="#">Our Team</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact Us</a></li>
+
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Headquarters</h5>
+<p class="text-gray-500 text-sm mb-4">
+    
+    18 Rafiu Shittu Street,<br/>
+    
+    Alaka Estate,<br/>
+    
+    Surulere,<br/>
+    
+    Lagos.<br/>
+    
+                </p>
+<div class="flex gap-4">
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a class="text-gray-500 hover:text-primary cursor-pointer transition-colors" href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 pt-16 mt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-xs">
+<p>© 2026 SPACEDEV Construction Group. All rights reserved.</p>
+<div class="flex gap-8">
+</div>
+</div>
+</footer>
+
+<div id="quote-modal" class="quote-modal hidden" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" aria-hidden="true">
+<div class="quote-modal-backdrop" id="quote-modal-backdrop" aria-hidden="true"></div>
+<div class="quote-modal-panel">
+<button type="button" class="quote-modal-close" id="quote-modal-close" aria-label="Close request quote form">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="quote-modal-inner">
+<h2 id="quote-modal-title" class="quote-modal-title">Request a Quote</h2>
+<p class="quote-modal-subtitle">Tell us about your project and we’ll get back within 24 hours.</p>
+<form id="quote-modal-form" class="quote-modal-form space-y-4" action="/send.php" method="post">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-white" for="quote-name">Full Name</label>
+<input id="quote-name" name="name" class="bg-background-dark/50 border border-white/10 rounded-lg py-3 px-4 text-white placeholder:text-gray-500 focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none glow-focus" placeholder="John Doe" type="text" required/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-white" for="quote-email">Email Address</label>
+<input id="quote-email" name="email" class="bg-background-dark/50 border border-white/10 rounded-lg py-3 px-4 text-white placeholder:text-gray-500 focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none glow-focus" placeholder="john@company.com" type="email" required/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-white" for="quote-project">Project Type</label>
+<select id="quote-project" name="project_type" class="bg-background-dark/50 border border-white/10 rounded-lg py-3 px-4 text-white focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none glow-focus appearance-none">
+<option value="commercial">Commercial Construction</option>
+<option value="industrial">Industrial Infrastructure</option>
+<option value="residential">Residential Development</option>
+<option value="consulting">Consulting</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-white" for="quote-message">Your Message</label>
+<textarea id="quote-message" name="message" class="bg-background-dark/50 border border-white/10 rounded-lg py-3 px-4 text-white placeholder:text-gray-500 focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none glow-focus resize-none" placeholder="Tell us about your project goals..." rows="4" required></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-background-dark font-bold py-4 rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 group" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+
+<!-- Project detail modal -->
+<div id="project-modal" class="project-modal hidden" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" aria-hidden="true">
+<div class="project-modal-backdrop" id="project-modal-backdrop" aria-hidden="true"></div>
+<div class="project-modal-panel">
+<button type="button" class="project-modal-close" id="project-modal-close" aria-label="Close project details">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="project-modal-content">
+<div class="project-modal-gallery">
+<div class="project-modal-image-wrap">
+<img id="project-modal-image" class="project-modal-image" src="" alt=""/>
+</div>
+<button type="button" class="project-modal-gallery-prev" id="project-modal-gallery-prev" aria-label="Previous image"><span class="material-symbols-outlined">chevron_left</span></button>
+<button type="button" class="project-modal-gallery-next" id="project-modal-gallery-next" aria-label="Next image"><span class="material-symbols-outlined">chevron_right</span></button>
+<div class="project-modal-dots" id="project-modal-dots"></div>
+</div>
+<div class="project-modal-body">
+<span id="project-modal-category" class="project-modal-category"></span>
+<h2 id="project-modal-title" class="project-modal-title"></h2>
+<p id="project-modal-location" class="project-modal-location"></p>
+<div class="project-modal-stats" id="project-modal-stats"></div>
+<h3 class="project-modal-overview-title">Overview</h3>
+<p id="project-modal-overview" class="project-modal-overview"></p>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    // Tab Interaction Logic for Services
+    const tabs = document.querySelectorAll('.service-tab');
+    const images = document.querySelectorAll('.service-image');
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('mouseenter', () => {
+            tabs.forEach(t => {
+                t.setAttribute('data-active', 'false');
+                t.classList.remove('border-primary');
+                t.classList.add('border-white/5');
+            });
+            tab.setAttribute('data-active', 'true');
+            tab.classList.add('border-primary');
+            tab.classList.remove('border-white/5');
+            images.forEach(img => img.setAttribute('data-active', 'false'));
+            images[index].setAttribute('data-active', 'true');
+        });
+    });
+
+    // Process section: animate timeline on step hover
+    const processSection = document.getElementById('process-section');
+    if (processSection) {
+        const steps = processSection.querySelectorAll('.process-step');
+        steps.forEach((step) => {
+            step.addEventListener('mouseenter', () => {
+                processSection.setAttribute('data-active-step', step.getAttribute('data-step'));
+            });
+        });
+        processSection.addEventListener('mouseleave', () => {
+            processSection.setAttribute('data-active-step', '0');
+        });
+    }
+
+    // Quote request modal
+    (function () {
+        var modal = document.getElementById('quote-modal');
+        var openBtn = document.getElementById('request-quote-btn');
+        var backdrop = document.getElementById('quote-modal-backdrop');
+        var closeBtn = document.getElementById('quote-modal-close');
+        if (!modal || !openBtn) return;
+        function openModal() {
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            closeBtn && closeBtn.focus();
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        openBtn.addEventListener('click', openModal);
+        document.querySelectorAll('.open-quote-modal').forEach(function (btn) {
+            btn.addEventListener('click', openModal);
+        });
+        backdrop && backdrop.addEventListener('click', closeModal);
+        closeBtn && closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    })();
+
+    // Project detail modal (used on index featured projects and projects page)
+    (function () {
+        var modal = document.getElementById('project-modal');
+        var backdrop = document.getElementById('project-modal-backdrop');
+        var closeBtn = document.getElementById('project-modal-close');
+        var imageEl = document.getElementById('project-modal-image');
+        var titleEl = document.getElementById('project-modal-title');
+        var categoryEl = document.getElementById('project-modal-category');
+        var locationEl = document.getElementById('project-modal-location');
+        var statsEl = document.getElementById('project-modal-stats');
+        var overviewEl = document.getElementById('project-modal-overview');
+        var dotsEl = document.getElementById('project-modal-dots');
+        var prevBtn = document.getElementById('project-modal-gallery-prev');
+        var nextBtn = document.getElementById('project-modal-gallery-next');
+        if (!modal) return;
+        var currentImages = [];
+        var currentImageIndex = 0;
+        function setGalleryImage(index) {
+            if (currentImages.length === 0) return;
+            currentImageIndex = (index + currentImages.length) % currentImages.length;
+            imageEl.src = currentImages[currentImageIndex];
+            if (dotsEl.children.length) {
+                for (var i = 0; i < dotsEl.children.length; i++) {
+                    dotsEl.children[i].classList.toggle('active', i === currentImageIndex);
+                    dotsEl.children[i].setAttribute('aria-current', i === currentImageIndex ? 'true' : 'false');
+                }
+            }
+            prevBtn.style.display = currentImages.length > 1 ? '' : 'none';
+            nextBtn.style.display = currentImages.length > 1 ? '' : 'none';
+        }
+        function escapeHtml(s) {
+            var div = document.createElement('div');
+            div.textContent = s;
+            return div.innerHTML;
+        }
+        function openModal(card) {
+            var title = card.getAttribute('data-title') || '';
+            var category = card.getAttribute('data-category') || '';
+            var location = card.getAttribute('data-location') || '';
+            var overview = card.getAttribute('data-overview') || card.getAttribute('data-description') || '';
+            var imagesStr = card.getAttribute('data-images') || card.getAttribute('data-image') || '';
+            currentImages = imagesStr.split('|').filter(Boolean);
+            var namesStr = card.getAttribute('data-stat-names') || '';
+            var valuesStr = card.getAttribute('data-stat-values') || '';
+            var names = namesStr.split('|').filter(Boolean);
+            var values = valuesStr.split('|').filter(Boolean);
+            titleEl.textContent = title;
+            categoryEl.textContent = category ? category.charAt(0).toUpperCase() + category.slice(1) : '';
+            locationEl.textContent = location;
+            overviewEl.textContent = overview;
+            imageEl.alt = card.getAttribute('data-image-alt') || title;
+            statsEl.innerHTML = '';
+            for (var i = 0; i < names.length && i < values.length; i++) {
+                var stat = document.createElement('div');
+                stat.className = 'project-modal-stat';
+                stat.innerHTML = '<span class="project-modal-stat-label">' + escapeHtml(names[i]) + '</span><span class="project-modal-stat-value">' + escapeHtml(values[i]) + '</span>';
+                statsEl.appendChild(stat);
+            }
+            dotsEl.innerHTML = '';
+            for (var j = 0; j < currentImages.length; j++) {
+                var dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'project-modal-dot' + (j === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Image ' + (j + 1));
+                dot.setAttribute('aria-current', j === 0 ? 'true' : 'false');
+                (function (idx) { dot.addEventListener('click', function () { setGalleryImage(idx); }); })(j);
+                dotsEl.appendChild(dot);
+            }
+            currentImageIndex = 0;
+            setGalleryImage(0);
+            dotsEl.style.display = currentImages.length > 1 ? 'flex' : 'none';
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        if (prevBtn) prevBtn.addEventListener('click', function () { setGalleryImage(currentImageIndex - 1); });
+        if (nextBtn) nextBtn.addEventListener('click', function () { setGalleryImage(currentImageIndex + 1); });
+        document.body.addEventListener('click', function (e) {
+            var card = e.target.closest('.project-card-trigger');
+            if (!card || card.classList.contains('projects-hidden')) return;
+            e.preventDefault();
+            openModal(card);
+        });
+        if (backdrop) backdrop.addEventListener('click', closeModal);
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    })();
+</script>
+</body>
+</html>
